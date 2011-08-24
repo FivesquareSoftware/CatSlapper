@@ -1,0 +1,47 @@
+body { margin:0; }
+#name {
+    font: 12px "Lucida Grande" ;
+	font-weight: bold; 
+	color: black; 
+//	text-shadow: white 0px 1px 0px;
+	position: absolute; 
+	top: 25px; 
+	left: 25px;
+	width: 200px;
+	opacity: 1.0;
+}
+#status {
+    font: 9px "Lucida Grande" ;
+//	font-weight: bold; 
+	color: black; 
+//	text-shadow: white 0px 1px 0px;
+	position: absolute; 
+	top: 40px; 
+	left: 25px;
+	width: 240px;
+	opacity: 1.0;
+}
+#on {
+    font: 10px "Lucida Grande" ;
+    position: absolute; 
+	top: 90px; 
+	left: 25px;
+	//border: 1px solid black;
+}
+#off {
+    font: 10px "Lucida Grande" ;
+    position: absolute; 
+	top: 90px; 
+	left:75px;
+	//border: 1px solid red;
+}
+#toggle {
+    position: absolute; 
+	top: 87px; 
+	left: 190px;
+}
+#restart {
+    position: absolute; 
+	top: 87px; 
+	left: 215px;
+}

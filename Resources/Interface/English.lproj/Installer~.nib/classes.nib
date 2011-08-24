@@ -1,0 +1,28 @@
+{
+    IBClasses = (
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {CLASS = TCSCatWrangler; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {
+                browse = id; 
+                didEndEditOpts = id; 
+                displayInstallerHelp = id; 
+                editOpts = id; 
+                install = id; 
+            }; 
+            CLASS = TCSInstallerController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                catalinaOptsField = NSTextField; 
+                entryField = NSTextField; 
+                entryWin = NSWindow; 
+                installButton = NSButton; 
+                installingKittyController = NSObjectController; 
+                messages = NSTextView; 
+                progressBar = NSProgressIndicator; 
+            }; 
+            SUPERCLASS = NSWindowController; 
+        }
+    ); 
+    IBVersion = 1; 
+}

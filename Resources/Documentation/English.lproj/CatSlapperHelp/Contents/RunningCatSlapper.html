@@ -1,0 +1,46 @@
+<html>
+
+<head>
+<?php 
+$topic_name="Running CatSlapper";
+include("Include/head.inc.php"); 
+?>
+</head>
+
+<body>
+<?php include("Include/topnav.inc.php") ?>	
+	<div class="clear">&nbsp;</div>
+	
+	<div id="content">
+		<p class="topicHeading">Running CatSlapper</p>
+		<p>
+			CatSlapper is a tool that helps Java Developers and System Administrators to manage multiple 
+			Jakarta Tomcat instances.  In order to use CatSlapper a number of requirements must be met:
+		</p>
+		<div class="taskBox">
+			<ol>
+				<li>You must be using Mac OS X Tiger (10.4) or higher</li>
+				<li>While not strictly a CatSlapper requirement, a Java Development Kit must be installed
+					to compile JSPs</li>
+				<li>You must have administrator privileges on the computer where CatSlapper is installed
+					if you plan on using certain features, like managing launchd jobs to run
+					Tomcat at system boot.</li>
+			</ol>
+		</div>
+		<p>
+			When you first start CatSlapper, it will pick up any running Tomcat instances and add them to it's database.
+			However, CatSlapper currently only supports Tomcat 5.0.x. Changes from version to version of Tomcat
+			may make older or newer Tomcats behave erratically when controlled by CatSlapper. Do not rely on CatSlapper 
+			to manage unsupported versions of Tomcat in production environments.
+		</p>		
+		<div style="height:5em">&nbsp;</div>
+
+	</div>
+<?php 
+$node="1";
+include("Include/leftnav.inc.php"); 
+?>
+</body>
+
+</html>
+

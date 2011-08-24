@@ -1,0 +1,1545 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 42;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		A404345B075CA3E1001F035F /* catslapper.icns in Resources */ = {isa = PBXBuildFile; fileRef = A404345A075CA3E1001F035F /* catslapper.icns */; };
+		A4059BE50910F49B0032CC10 /* TCSKittyArrayController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4059BE30910F49B0032CC10 /* TCSKittyArrayController.m */; };
+		A4168D58074244EE0016667B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A4168D54074244EE0016667B /* InfoPlist.strings */; };
+		A4168D59074244EE0016667B /* MainMenu.nib in Resources */ = {isa = PBXBuildFile; fileRef = A4168D56074244EE0016667B /* MainMenu.nib */; };
+		A4168D86074245500016667B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A4168D5F074245500016667B /* main.m */; };
+		A4168D88074245500016667B /* TCSCatWrangler.m in Sources */ = {isa = PBXBuildFile; fileRef = A4168D61074245500016667B /* TCSCatWrangler.m */; };
+		A4168D8B074245500016667B /* TCSCatSlapper.m in Sources */ = {isa = PBXBuildFile; fileRef = A4168D64074245500016667B /* TCSCatSlapper.m */; };
+		A4168D8E074245500016667B /* TCSConsoleServer.m in Sources */ = {isa = PBXBuildFile; fileRef = A4168D67074245500016667B /* TCSConsoleServer.m */; };
+		A4168D90074245500016667B /* TCSConsoleView.m in Sources */ = {isa = PBXBuildFile; fileRef = A4168D69074245500016667B /* TCSConsoleView.m */; };
+		A4168D92074245500016667B /* TCSConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = A4168D6B074245500016667B /* TCSConstants.m */; };
+		A4168D94074245500016667B /* TCSController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4168D6D074245500016667B /* TCSController.m */; };
+		A4168D98074245500016667B /* TCSKitty.m in Sources */ = {isa = PBXBuildFile; fileRef = A4168D71074245500016667B /* TCSKitty.m */; };
+		A4168D9A074245500016667B /* TCSKittyParsing.m in Sources */ = {isa = PBXBuildFile; fileRef = A4168D73074245500016667B /* TCSKittyParsing.m */; };
+		A4168D9E074245500016667B /* TCSLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = A4168D77074245500016667B /* TCSLogger.m */; };
+		A4168DA0074245500016667B /* TCSNoPopupSelectionTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = A4168D79074245500016667B /* TCSNoPopupSelectionTransformer.m */; };
+		A4168DA3074245500016667B /* TCSPrefController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4168D7C074245500016667B /* TCSPrefController.m */; };
+		A4168DA9074245500016667B /* TCSToolbarDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A4168D82074245500016667B /* TCSToolbarDelegate.m */; };
+		A4168DB1074245BE0016667B /* jakarta-tomcat-5.0.28.tar.gz in CopyFiles */ = {isa = PBXBuildFile; fileRef = A4168DB0074245BE0016667B /* jakarta-tomcat-5.0.28.tar.gz */; };
+		A4168DED074249420016667B /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A4168DEB074249420016667B /* Localizable.strings */; };
+		A4180DF908529A33003DFCEE /* appearance.tif in Resources */ = {isa = PBXBuildFile; fileRef = A4180DF208529A33003DFCEE /* appearance.tif */; };
+		A4180DFA08529A33003DFCEE /* application.tif in Resources */ = {isa = PBXBuildFile; fileRef = A4180DF308529A33003DFCEE /* application.tif */; };
+		A4180DFC08529A33003DFCEE /* default.tif in Resources */ = {isa = PBXBuildFile; fileRef = A4180DF508529A33003DFCEE /* default.tif */; };
+		A4180DFE08529A33003DFCEE /* manager.tif in Resources */ = {isa = PBXBuildFile; fileRef = A4180DF708529A33003DFCEE /* manager.tif */; };
+		A4180DFF08529A33003DFCEE /* root.tif in Resources */ = {isa = PBXBuildFile; fileRef = A4180DF808529A33003DFCEE /* root.tif */; };
+		A418ADC108F01F6200F0E364 /* bg_middle_top.png in Resources */ = {isa = PBXBuildFile; fileRef = A418ADC008F01F6200F0E364 /* bg_middle_top.png */; };
+		A418ADEB08F034BB00F0E364 /* bg_middle_bottom.png in Resources */ = {isa = PBXBuildFile; fileRef = A418ADEA08F034BB00F0E364 /* bg_middle_bottom.png */; };
+		A418ADF308F0360000F0E364 /* bg_bottom.png in Resources */ = {isa = PBXBuildFile; fileRef = A418ADF208F0360000F0E364 /* bg_bottom.png */; };
+		A418AE0508F03C8D00F0E364 /* bg_top.png in Resources */ = {isa = PBXBuildFile; fileRef = A418AE0408F03C8D00F0E364 /* bg_top.png */; };
+		A418AE2308F07ABD00F0E364 /* bg_combined.png in Resources */ = {isa = PBXBuildFile; fileRef = A418AE2208F07ABD00F0E364 /* bg_combined.png */; };
+		A42088700827A55300E50304 /* AGRegex.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A420886F0827A55300E50304 /* AGRegex.framework */; };
+		A420887F0827A68A00E50304 /* AGRegex.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = A420886F0827A55300E50304 /* AGRegex.framework */; };
+		A42BEACB0853ABE800A9D377 /* connector.tif in Resources */ = {isa = PBXBuildFile; fileRef = A42BEAC90853ABE800A9D377 /* connector.tif */; };
+		A42BEACC0853ABE800A9D377 /* host.tif in Resources */ = {isa = PBXBuildFile; fileRef = A42BEACA0853ABE800A9D377 /* host.tif */; };
+		A42E7710079D411100B067BD /* TCSTomcatManagerResponseDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A42E770E079D411100B067BD /* TCSTomcatManagerResponseDelegate.m */; };
+		A4374B4F0872BD800026C5EE /* TCSCatSpanker.m in Sources */ = {isa = PBXBuildFile; fileRef = A4374B4B0872BD800026C5EE /* TCSCatSpanker.m */; };
+		A4374B510872BD800026C5EE /* TCSUserShell.m in Sources */ = {isa = PBXBuildFile; fileRef = A4374B4D0872BD800026C5EE /* TCSUserShell.m */; };
+		A4374BE10872C92B0026C5EE /* TomcatSlapper.sh in CopyFiles */ = {isa = PBXBuildFile; fileRef = A4374B160871F6CE0026C5EE /* TomcatSlapper.sh */; };
+		A43BA8BB093CE430007E4C32 /* power.png in CopyFiles */ = {isa = PBXBuildFile; fileRef = A43BA8B5093CE416007E4C32 /* power.png */; };
+		A43BA8BC093CE430007E4C32 /* refresh.png in CopyFiles */ = {isa = PBXBuildFile; fileRef = A43BA8B6093CE416007E4C32 /* refresh.png */; };
+		A43BA9B4093D78EA007E4C32 /* off.png in CopyFiles */ = {isa = PBXBuildFile; fileRef = A43BA9B2093D78E2007E4C32 /* off.png */; };
+		A43BA9B5093D78EA007E4C32 /* on.png in CopyFiles */ = {isa = PBXBuildFile; fileRef = A43BA9B3093D78E2007E4C32 /* on.png */; };
+		A43D378F0860E0AE00B32AD3 /* TCSTomcatManagerDeployController.m in Sources */ = {isa = PBXBuildFile; fileRef = A43D378D0860E0AE00B32AD3 /* TCSTomcatManagerDeployController.m */; };
+		A43D379A086199C800B32AD3 /* Deployer.nib in Resources */ = {isa = PBXBuildFile; fileRef = A43D3798086199C800B32AD3 /* Deployer.nib */; };
+		A44877E1087D4D85006CBA5D /* cancel_b.tif in Resources */ = {isa = PBXBuildFile; fileRef = A44877DF087D4D85006CBA5D /* cancel_b.tif */; };
+		A44877E2087D4D85006CBA5D /* cancel_w.tif in Resources */ = {isa = PBXBuildFile; fileRef = A44877E0087D4D85006CBA5D /* cancel_w.tif */; };
+		A454F94709588A1F00677758 /* agent.template.plist in Resources */ = {isa = PBXBuildFile; fileRef = A4C3F35B09579864002FC907 /* agent.template.plist */; };
+		A454F94809588A1F00677758 /* daemon.template.plist in Resources */ = {isa = PBXBuildFile; fileRef = A4C3F35C09579864002FC907 /* daemon.template.plist */; };
+		A458326B074ABED200A4C52C /* TCSIOUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = A4583269074ABED200A4C52C /* TCSIOUtils.m */; };
+		A459857C0797F50500EA14D8 /* TCSHostComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = A459857A0797F50500EA14D8 /* TCSHostComponent.m */; };
+		A45985800797F52200EA14D8 /* TCSAppComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = A459857E0797F52200EA14D8 /* TCSAppComponent.m */; };
+		A45B3BF7078AC91600515E66 /* TCSConnectorComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = A45B3BF5078AC91600515E66 /* TCSConnectorComponent.m */; };
+		A4604D6708129C6A007168DA /* TCSServerStatusResponseDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A4604D6508129C6A007168DA /* TCSServerStatusResponseDelegate.m */; };
+		A4604D890812A270007168DA /* TCSApplicationsStatusResponseDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A4604D870812A270007168DA /* TCSApplicationsStatusResponseDelegate.m */; };
+		A46119E50C6674D500372A4F /* cvstat.pl in Resources */ = {isa = PBXBuildFile; fileRef = A46119E10C6674D500372A4F /* cvstat.pl */; };
+		A46119E60C6674D500372A4F /* HelpGen.sh in Resources */ = {isa = PBXBuildFile; fileRef = A46119E20C6674D500372A4F /* HelpGen.sh */; };
+		A46119E70C6674D500372A4F /* HelpIndexer.sh in Resources */ = {isa = PBXBuildFile; fileRef = A46119E30C6674D500372A4F /* HelpIndexer.sh */; };
+		A46119E80C6674D500372A4F /* SetVerifiedSums.sh in Resources */ = {isa = PBXBuildFile; fileRef = A46119E40C6674D500372A4F /* SetVerifiedSums.sh */; };
+		A46FBF9308716CC3008C279A /* TCSAuthorizationHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = A46FBF9108716CC3008C279A /* TCSAuthorizationHandler.m */; };
+		A470207B083B688800916A23 /* TCSStartupItemManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A4702079083B688800916A23 /* TCSStartupItemManager.m */; };
+		A4794090078CA2CE004313B1 /* TCSComponentNameCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A479408E078CA2CE004313B1 /* TCSComponentNameCell.m */; };
+		A479CEDF077AF14200A303A7 /* TCSComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = A479CEDD077AF14200A303A7 /* TCSComponent.m */; };
+		A47B0F100828E8BB00794A69 /* install-5.0.28.sh in CopyFiles */ = {isa = PBXBuildFile; fileRef = A47B0F0F0828E8BB00794A69 /* install-5.0.28.sh */; };
+		A47D172007778EA800A1B851 /* ServerErrors.nib in Resources */ = {isa = PBXBuildFile; fileRef = A47D171E07778EA800A1B851 /* ServerErrors.nib */; };
+		A47D175F0778534C00A1B851 /* TCSServerErrorDisplayController.m in Sources */ = {isa = PBXBuildFile; fileRef = A47D175D0778534C00A1B851 /* TCSServerErrorDisplayController.m */; };
+		A47D178D077857C700A1B851 /* TCSServerConfigError.m in Sources */ = {isa = PBXBuildFile; fileRef = A47D178B077857C700A1B851 /* TCSServerConfigError.m */; };
+		A47E167607B0415E00CBFDAF /* Authorize.nib in Resources */ = {isa = PBXBuildFile; fileRef = A47E167407B0415E00CBFDAF /* Authorize.nib */; };
+		A47E167A07B041A100CBFDAF /* TCSTomcatManagerAuthController.m in Sources */ = {isa = PBXBuildFile; fileRef = A47E167807B041A100CBFDAF /* TCSTomcatManagerAuthController.m */; };
+		A47F9B89077DAD580051F3F6 /* TCSComponentViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = A47F9B87077DAD580051F3F6 /* TCSComponentViewDataSource.m */; };
+		A480F39E07D88FEE00337752 /* info_flat.tif in Resources */ = {isa = PBXBuildFile; fileRef = A480F39D07D88FEE00337752 /* info_flat.tif */; };
+		A48595290955D4BC008565A7 /* TCSLaunchDaemonManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A48595270955D4BC008565A7 /* TCSLaunchDaemonManager.m */; };
+		A48704D90746599D00DEBEED /* Installer.nib in Resources */ = {isa = PBXBuildFile; fileRef = A48704D50746599D00DEBEED /* Installer.nib */; };
+		A48704DA0746599D00DEBEED /* Preferences.nib in Resources */ = {isa = PBXBuildFile; fileRef = A48704D70746599D00DEBEED /* Preferences.nib */; };
+		A490972A08579C5100DF3606 /* add.tif in Resources */ = {isa = PBXBuildFile; fileRef = A490971E08579C5100DF3606 /* add.tif */; };
+		A490972B08579C5100DF3606 /* arrowright.tif in Resources */ = {isa = PBXBuildFile; fileRef = A490971F08579C5100DF3606 /* arrowright.tif */; };
+		A490972C08579C5100DF3606 /* arrowup.tif in Resources */ = {isa = PBXBuildFile; fileRef = A490972008579C5100DF3606 /* arrowup.tif */; };
+		A490972D08579C5100DF3606 /* edit.tif in Resources */ = {isa = PBXBuildFile; fileRef = A490972108579C5100DF3606 /* edit.tif */; };
+		A490972E08579C5100DF3606 /* exc.tif in Resources */ = {isa = PBXBuildFile; fileRef = A490972208579C5100DF3606 /* exc.tif */; };
+		A490972F08579C5100DF3606 /* installer.tif in Resources */ = {isa = PBXBuildFile; fileRef = A490972308579C5100DF3606 /* installer.tif */; };
+		A490973008579C5100DF3606 /* reload.tif in Resources */ = {isa = PBXBuildFile; fileRef = A490972408579C5100DF3606 /* reload.tif */; };
+		A490973108579C5100DF3606 /* remove.tif in Resources */ = {isa = PBXBuildFile; fileRef = A490972508579C5100DF3606 /* remove.tif */; };
+		A490973208579C5100DF3606 /* restart.tif in Resources */ = {isa = PBXBuildFile; fileRef = A490972608579C5100DF3606 /* restart.tif */; };
+		A490973308579C5100DF3606 /* screen.tif in Resources */ = {isa = PBXBuildFile; fileRef = A490972708579C5100DF3606 /* screen.tif */; };
+		A490973408579C5100DF3606 /* start.tif in Resources */ = {isa = PBXBuildFile; fileRef = A490972808579C5100DF3606 /* start.tif */; };
+		A490973508579C5100DF3606 /* stop.tif in Resources */ = {isa = PBXBuildFile; fileRef = A490972908579C5100DF3606 /* stop.tif */; };
+		A49097490857A02900DF3606 /* arrowleft.tif in Resources */ = {isa = PBXBuildFile; fileRef = A49097480857A02900DF3606 /* arrowleft.tif */; };
+		A49097510857A0F800DF3606 /* info.tif in Resources */ = {isa = PBXBuildFile; fileRef = A49097500857A0F800DF3606 /* info.tif */; };
+		A49D0B2508C47C5700DFBADF /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = A49D0B2408C47C5700DFBADF /* Credits.rtf */; };
+		A4A151E307529AF300BBA8F0 /* TCSSignalHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = A4A151E107529AF300BBA8F0 /* TCSSignalHandler.m */; };
+		A4A53BA8081D12FB000057B9 /* TCSPrefsToolbarDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A4A53BA6081D12FB000057B9 /* TCSPrefsToolbarDelegate.m */; };
+		A4A6F7A20953B29500CB42CD /* CatSound.aif in Resources */ = {isa = PBXBuildFile; fileRef = A4A6F79F0953B29500CB42CD /* CatSound.aif */; };
+		A4A713F00824202000DECC27 /* TCSInstallerController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4A713EE0824202000DECC27 /* TCSInstallerController.m */; };
+		A4B220A808B3E7C00023D6DE /* TCSLayoutManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A4B220A608B3E7C00023D6DE /* TCSLayoutManager.m */; };
+		A4B2D88B085A487600C47C72 /* redo_b.tif in Resources */ = {isa = PBXBuildFile; fileRef = A4B2D889085A487600C47C72 /* redo_b.tif */; };
+		A4B2D88C085A487600C47C72 /* redo_w.tif in Resources */ = {isa = PBXBuildFile; fileRef = A4B2D88A085A487600C47C72 /* redo_w.tif */; };
+		A4B4F6D908BBD807004121A8 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4B4F6D808BBD807004121A8 /* Security.framework */; };
+		A4C3F36109579877002FC907 /* CatSlapper.sdef in Resources */ = {isa = PBXBuildFile; fileRef = A4C3F36009579877002FC907 /* CatSlapper.sdef */; };
+		A4C59E5E0969BCCA0098D3DA /* ExceptionHandling.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4C59E5D0969BCCA0098D3DA /* ExceptionHandling.framework */; };
+		A4C930BF08B9F18F00AE53D5 /* NSArrayController+TCSUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = A4C930BD08B9F18F00AE53D5 /* NSArrayController+TCSUtils.m */; };
+		A4CAB59F078B5FAC00133FB7 /* TCSTomcatManagerProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = A4CAB59D078B5FAC00133FB7 /* TCSTomcatManagerProxy.m */; };
+		A4CF3CB3091974E9001BB25C /* NSApplication+Scripting.m in Sources */ = {isa = PBXBuildFile; fileRef = A4CF3CB1091974E9001BB25C /* NSApplication+Scripting.m */; };
+		A4D8A1C2091AD34100ADD928 /* CatSlapper.css in CopyFiles */ = {isa = PBXBuildFile; fileRef = A4D8A1AE091AD2F300ADD928 /* CatSlapper.css */; };
+		A4D8A1C3091AD34100ADD928 /* CatSlapper.html in CopyFiles */ = {isa = PBXBuildFile; fileRef = A4D8A1AF091AD2F300ADD928 /* CatSlapper.html */; };
+		A4D8A1C4091AD34100ADD928 /* CatSlapper.js in CopyFiles */ = {isa = PBXBuildFile; fileRef = A4D8A1B0091AD2F300ADD928 /* CatSlapper.js */; };
+		A4D8A1C5091AD34100ADD928 /* Default.png in CopyFiles */ = {isa = PBXBuildFile; fileRef = A4D8A1B1091AD2F300ADD928 /* Default.png */; };
+		A4D8A1C6091AD34100ADD928 /* Info.plist in CopyFiles */ = {isa = PBXBuildFile; fileRef = A4D8A1B2091AD2F300ADD928 /* Info.plist */; };
+		A4E10843083E93F700A4D771 /* TCSProcess.m in Sources */ = {isa = PBXBuildFile; fileRef = A4E10841083E93F700A4D771 /* TCSProcess.m */; };
+		A4E69B2D099E784E009F930F /* TCSKittyPermissionsUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = A4E69B2B099E784E009F930F /* TCSKittyPermissionsUtility.m */; };
+		A4EA0A6D09DCA40A00AC4CF0 /* Acknowledgements.rtf in Resources */ = {isa = PBXBuildFile; fileRef = A4EA0A3F09DCA40900AC4CF0 /* Acknowledgements.rtf */; };
+		A4EA0A8D09DCA40A00AC4CF0 /* License.rtf in Resources */ = {isa = PBXBuildFile; fileRef = A4EA0A6509DCA40A00AC4CF0 /* License.rtf */; };
+		A4EA0A9009DCA40A00AC4CF0 /* RUNNING.txt in Resources */ = {isa = PBXBuildFile; fileRef = A4EA0A6B09DCA40A00AC4CF0 /* RUNNING.txt */; };
+		A4F133F107A1301900D62EC6 /* TCSServerInfoResponseDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A4F133EF07A1301900D62EC6 /* TCSServerInfoResponseDelegate.m */; };
+		A4F133F507A1303E00D62EC6 /* TCSConnectorsInfoResponseDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A4F133F307A1303E00D62EC6 /* TCSConnectorsInfoResponseDelegate.m */; };
+		A4F133F907A1306200D62EC6 /* TCSHostsInfoResponseDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A4F133F707A1306200D62EC6 /* TCSHostsInfoResponseDelegate.m */; };
+		A4F133FD07A1308200D62EC6 /* TCSApplicationsInfoResponseDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A4F133FB07A1308200D62EC6 /* TCSApplicationsInfoResponseDelegate.m */; };
+		A4F1340107A1309A00D62EC6 /* TCSApplicationStartResponseDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A4F133FF07A1309A00D62EC6 /* TCSApplicationStartResponseDelegate.m */; };
+		A4F1340507A130D900D62EC6 /* TCSApplicationStopResponseDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A4F1340307A130D900D62EC6 /* TCSApplicationStopResponseDelegate.m */; };
+		A4F1340907A130F800D62EC6 /* TCSApplicationReloadResponseDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A4F1340707A130F800D62EC6 /* TCSApplicationReloadResponseDelegate.m */; };
+		A4F1340D07A1311200D62EC6 /* TCSApplicationDeployResponseDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A4F1340B07A1311200D62EC6 /* TCSApplicationDeployResponseDelegate.m */; };
+		A4F1341107A1312800D62EC6 /* TCSApplicationUndeployResponseDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A4F1340F07A1312800D62EC6 /* TCSApplicationUndeployResponseDelegate.m */; };
+		A4FD413F07DA572100E5614C /* TCSComponentOutlineViewColumn.m in Sources */ = {isa = PBXBuildFile; fileRef = A4FD413D07DA572100E5614C /* TCSComponentOutlineViewColumn.m */; };
+		A4FEB2F409451B93006D05D9 /* Icon.png in CopyFiles */ = {isa = PBXBuildFile; fileRef = A4FEB2F309451B85006D05D9 /* Icon.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A4D8A1A0091AD24400ADD928 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A4D8A19B091AD24400ADD928 /* CatSlapperWidgetPlugin.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8D5B49B6048680CD000E48DA;
+			remoteInfo = CatSlapperWidgetPlugin;
+		};
+		A4D8A1A4091AD25000ADD928 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A4D8A19B091AD24400ADD928 /* CatSlapperWidgetPlugin.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 8D5B49AC048680CD000E48DA;
+			remoteInfo = CatSlapperWidgetPlugin;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A44B1AA8083BED5600BBF494 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = Scripts;
+			dstSubfolderSpec = 7;
+			files = (
+				A4374BE10872C92B0026C5EE /* TomcatSlapper.sh in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A47B0F0E0828E87F00794A69 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = Installer;
+			dstSubfolderSpec = 7;
+			files = (
+				A4168DB1074245BE0016667B /* jakarta-tomcat-5.0.28.tar.gz in CopyFiles */,
+				A47B0F100828E8BB00794A69 /* install-5.0.28.sh in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4D8A1B3091AD30700ADD928 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = CatSlapper.wdgt;
+			dstSubfolderSpec = 16;
+			files = (
+				A4FEB2F409451B93006D05D9 /* Icon.png in CopyFiles */,
+				A43BA9B4093D78EA007E4C32 /* off.png in CopyFiles */,
+				A43BA9B5093D78EA007E4C32 /* on.png in CopyFiles */,
+				A43BA8BB093CE430007E4C32 /* power.png in CopyFiles */,
+				A43BA8BC093CE430007E4C32 /* refresh.png in CopyFiles */,
+				A4D8A1C2091AD34100ADD928 /* CatSlapper.css in CopyFiles */,
+				A4D8A1C3091AD34100ADD928 /* CatSlapper.html in CopyFiles */,
+				A4D8A1C4091AD34100ADD928 /* CatSlapper.js in CopyFiles */,
+				A4D8A1C5091AD34100ADD928 /* Default.png in CopyFiles */,
+				A4D8A1C6091AD34100ADD928 /* Info.plist in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4DD527008B29974006A639A /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 8;
+			dstPath = "${TARGET_TEMP_DIR}";
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		A4F491070743A14F00702937 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				A420887F0827A68A00E50304 /* AGRegex.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		8D1107320486CEB800E47090 /* CatSlapper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CatSlapper.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A404345A075CA3E1001F035F /* catslapper.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = catslapper.icns; sourceTree = "<group>"; };
+		A4059BE20910F49B0032CC10 /* TCSKittyArrayController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCSKittyArrayController.h; sourceTree = "<group>"; };
+		A4059BE30910F49B0032CC10 /* TCSKittyArrayController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCSKittyArrayController.m; sourceTree = "<group>"; };
+		A4168D55074244EE0016667B /* English */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A4168D57074244EE0016667B /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/MainMenu.nib; sourceTree = "<group>"; };
+		A4168D5F074245500016667B /* main.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A4168D60074245500016667B /* TCSCatWrangler.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = TCSCatWrangler.h; sourceTree = "<group>"; };
+		A4168D61074245500016667B /* TCSCatWrangler.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = TCSCatWrangler.m; sourceTree = "<group>"; };
+		A4168D62074245500016667B /* TCSCatSlapper+Private.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = "TCSCatSlapper+Private.h"; sourceTree = "<group>"; };
+		A4168D63074245500016667B /* TCSCatSlapper.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = TCSCatSlapper.h; sourceTree = "<group>"; };
+		A4168D64074245500016667B /* TCSCatSlapper.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = TCSCatSlapper.m; sourceTree = "<group>"; };
+		A4168D65074245500016667B /* TCSConsoleServer+Private.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = "TCSConsoleServer+Private.h"; sourceTree = "<group>"; };
+		A4168D66074245500016667B /* TCSConsoleServer.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = TCSConsoleServer.h; sourceTree = "<group>"; };
+		A4168D67074245500016667B /* TCSConsoleServer.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = TCSConsoleServer.m; sourceTree = "<group>"; };
+		A4168D68074245500016667B /* TCSConsoleView.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = TCSConsoleView.h; sourceTree = "<group>"; };
+		A4168D69074245500016667B /* TCSConsoleView.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = TCSConsoleView.m; sourceTree = "<group>"; };
+		A4168D6A074245500016667B /* TCSConstants.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = TCSConstants.h; sourceTree = "<group>"; };
+		A4168D6B074245500016667B /* TCSConstants.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = TCSConstants.m; sourceTree = "<group>"; };
+		A4168D6C074245500016667B /* TCSController.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = TCSController.h; sourceTree = "<group>"; };
+		A4168D6D074245500016667B /* TCSController.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = TCSController.m; sourceTree = "<group>"; };
+		A4168D70074245500016667B /* TCSKitty.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = TCSKitty.h; sourceTree = "<group>"; };
+		A4168D71074245500016667B /* TCSKitty.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = TCSKitty.m; sourceTree = "<group>"; };
+		A4168D72074245500016667B /* TCSKittyParsing.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = TCSKittyParsing.h; sourceTree = "<group>"; };
+		A4168D73074245500016667B /* TCSKittyParsing.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = TCSKittyParsing.m; sourceTree = "<group>"; };
+		A4168D76074245500016667B /* TCSLogger.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = TCSLogger.h; sourceTree = "<group>"; };
+		A4168D77074245500016667B /* TCSLogger.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = TCSLogger.m; sourceTree = "<group>"; };
+		A4168D78074245500016667B /* TCSNoPopupSelectionTransformer.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = TCSNoPopupSelectionTransformer.h; sourceTree = "<group>"; };
+		A4168D79074245500016667B /* TCSNoPopupSelectionTransformer.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = TCSNoPopupSelectionTransformer.m; sourceTree = "<group>"; };
+		A4168D7A074245500016667B /* TCSPrefController+Private.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = "TCSPrefController+Private.h"; sourceTree = "<group>"; };
+		A4168D7B074245500016667B /* TCSPrefController.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = TCSPrefController.h; sourceTree = "<group>"; };
+		A4168D7C074245500016667B /* TCSPrefController.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = TCSPrefController.m; sourceTree = "<group>"; };
+		A4168D81074245500016667B /* TCSToolbarDelegate.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = TCSToolbarDelegate.h; sourceTree = "<group>"; };
+		A4168D82074245500016667B /* TCSToolbarDelegate.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = TCSToolbarDelegate.m; sourceTree = "<group>"; };
+		A4168D85074245500016667B /* TomcatSlapper_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = TomcatSlapper_Prefix.pch; sourceTree = "<group>"; };
+		A4168DB0074245BE0016667B /* jakarta-tomcat-5.0.28.tar.gz */ = {isa = PBXFileReference; lastKnownFileType = archive.gzip; path = "jakarta-tomcat-5.0.28.tar.gz"; sourceTree = "<group>"; };
+		A4168DEC074249420016667B /* English */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/Localizable.strings; sourceTree = "<group>"; };
+		A4180DF208529A33003DFCEE /* appearance.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = appearance.tif; sourceTree = "<group>"; };
+		A4180DF308529A33003DFCEE /* application.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = application.tif; sourceTree = "<group>"; };
+		A4180DF508529A33003DFCEE /* default.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = default.tif; sourceTree = "<group>"; };
+		A4180DF708529A33003DFCEE /* manager.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = manager.tif; sourceTree = "<group>"; };
+		A4180DF808529A33003DFCEE /* root.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = root.tif; sourceTree = "<group>"; };
+		A418ADC008F01F6200F0E364 /* bg_middle_top.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg_middle_top.png; sourceTree = "<group>"; };
+		A418ADEA08F034BB00F0E364 /* bg_middle_bottom.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg_middle_bottom.png; sourceTree = "<group>"; };
+		A418ADF208F0360000F0E364 /* bg_bottom.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg_bottom.png; sourceTree = "<group>"; };
+		A418AE0408F03C8D00F0E364 /* bg_top.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg_top.png; sourceTree = "<group>"; };
+		A418AE2208F07ABD00F0E364 /* bg_combined.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg_combined.png; sourceTree = "<group>"; };
+		A41B4BCA09632438004F46CF /* TCSLaunchDaemonManager+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TCSLaunchDaemonManager+Private.h"; sourceTree = "<group>"; };
+		A420886F0827A55300E50304 /* AGRegex.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AGRegex.framework; path = Frameworks/AGRegex.framework; sourceTree = "<group>"; };
+		A42BEAC90853ABE800A9D377 /* connector.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = connector.tif; sourceTree = "<group>"; };
+		A42BEACA0853ABE800A9D377 /* host.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = host.tif; sourceTree = "<group>"; };
+		A42E770D079D411100B067BD /* TCSTomcatManagerResponseDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCSTomcatManagerResponseDelegate.h; sourceTree = "<group>"; };
+		A42E770E079D411100B067BD /* TCSTomcatManagerResponseDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCSTomcatManagerResponseDelegate.m; sourceTree = "<group>"; };
+		A42E9D3707B1043000757A66 /* TCSTomcatManagerAuthController+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TCSTomcatManagerAuthController+Private.h"; sourceTree = "<group>"; };
+		A4374B120871F6CE0026C5EE /* DisableStartupItem.sh */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.script.sh; path = DisableStartupItem.sh; sourceTree = "<group>"; };
+		A4374B130871F6CE0026C5EE /* EnableStartupItem.sh */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.script.sh; path = EnableStartupItem.sh; sourceTree = "<group>"; };
+		A4374B140871F6CE0026C5EE /* StartupItemTemplate */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.script.sh; path = StartupItemTemplate; sourceTree = "<group>"; };
+		A4374B150871F6CE0026C5EE /* StartupParameters.plist */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.plist.xml; path = StartupParameters.plist; sourceTree = "<group>"; };
+		A4374B160871F6CE0026C5EE /* TomcatSlapper.sh */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.script.sh; path = TomcatSlapper.sh; sourceTree = "<group>"; };
+		A4374B4A0872BD800026C5EE /* TCSCatSpanker.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = TCSCatSpanker.h; sourceTree = "<group>"; };
+		A4374B4B0872BD800026C5EE /* TCSCatSpanker.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = TCSCatSpanker.m; sourceTree = "<group>"; };
+		A4374B4C0872BD800026C5EE /* TCSUserShell.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = TCSUserShell.h; sourceTree = "<group>"; };
+		A4374B4D0872BD800026C5EE /* TCSUserShell.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = TCSUserShell.m; sourceTree = "<group>"; };
+		A4374B800872BEF90026C5EE /* TCSCatSpanker+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TCSCatSpanker+Private.h"; sourceTree = "<group>"; };
+		A439EA7208D835FC00BAC32C /* TCSInstallerController+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TCSInstallerController+Private.h"; sourceTree = "<group>"; };
+		A43BA8B5093CE416007E4C32 /* power.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = power.png; sourceTree = "<group>"; };
+		A43BA8B6093CE416007E4C32 /* refresh.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = refresh.png; sourceTree = "<group>"; };
+		A43BA9B2093D78E2007E4C32 /* off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = off.png; sourceTree = "<group>"; };
+		A43BA9B3093D78E2007E4C32 /* on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = on.png; sourceTree = "<group>"; };
+		A43D378C0860E0AE00B32AD3 /* TCSTomcatManagerDeployController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCSTomcatManagerDeployController.h; sourceTree = "<group>"; };
+		A43D378D0860E0AE00B32AD3 /* TCSTomcatManagerDeployController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCSTomcatManagerDeployController.m; sourceTree = "<group>"; };
+		A43D3799086199C800B32AD3 /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/Deployer.nib; sourceTree = "<group>"; };
+		A44877DF087D4D85006CBA5D /* cancel_b.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = cancel_b.tif; sourceTree = "<group>"; };
+		A44877E0087D4D85006CBA5D /* cancel_w.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = cancel_w.tif; sourceTree = "<group>"; };
+		A4583268074ABED200A4C52C /* TCSIOUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCSIOUtils.h; sourceTree = "<group>"; };
+		A4583269074ABED200A4C52C /* TCSIOUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCSIOUtils.m; sourceTree = "<group>"; };
+		A45985790797F50500EA14D8 /* TCSHostComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCSHostComponent.h; sourceTree = "<group>"; };
+		A459857A0797F50500EA14D8 /* TCSHostComponent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCSHostComponent.m; sourceTree = "<group>"; };
+		A459857D0797F52200EA14D8 /* TCSAppComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCSAppComponent.h; sourceTree = "<group>"; };
+		A459857E0797F52200EA14D8 /* TCSAppComponent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCSAppComponent.m; sourceTree = "<group>"; };
+		A45B3BF4078AC91600515E66 /* TCSConnectorComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCSConnectorComponent.h; sourceTree = "<group>"; };
+		A45B3BF5078AC91600515E66 /* TCSConnectorComponent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCSConnectorComponent.m; sourceTree = "<group>"; };
+		A4604D6408129C6A007168DA /* TCSServerStatusResponseDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCSServerStatusResponseDelegate.h; sourceTree = "<group>"; };
+		A4604D6508129C6A007168DA /* TCSServerStatusResponseDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCSServerStatusResponseDelegate.m; sourceTree = "<group>"; };
+		A4604D860812A270007168DA /* TCSApplicationsStatusResponseDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCSApplicationsStatusResponseDelegate.h; sourceTree = "<group>"; };
+		A4604D870812A270007168DA /* TCSApplicationsStatusResponseDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCSApplicationsStatusResponseDelegate.m; sourceTree = "<group>"; };
+		A46119E10C6674D500372A4F /* cvstat.pl */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.script.perl; path = cvstat.pl; sourceTree = "<group>"; };
+		A46119E20C6674D500372A4F /* HelpGen.sh */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.script.sh; path = HelpGen.sh; sourceTree = "<group>"; };
+		A46119E30C6674D500372A4F /* HelpIndexer.sh */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.script.sh; path = HelpIndexer.sh; sourceTree = "<group>"; };
+		A46119E40C6674D500372A4F /* SetVerifiedSums.sh */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.script.sh; path = SetVerifiedSums.sh; sourceTree = "<group>"; };
+		A46FBF9008716CC3008C279A /* TCSAuthorizationHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCSAuthorizationHandler.h; sourceTree = "<group>"; };
+		A46FBF9108716CC3008C279A /* TCSAuthorizationHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCSAuthorizationHandler.m; sourceTree = "<group>"; };
+		A4702078083B688800916A23 /* TCSStartupItemManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCSStartupItemManager.h; sourceTree = "<group>"; };
+		A4702079083B688800916A23 /* TCSStartupItemManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCSStartupItemManager.m; sourceTree = "<group>"; };
+		A479408D078CA2CE004313B1 /* TCSComponentNameCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCSComponentNameCell.h; sourceTree = "<group>"; };
+		A479408E078CA2CE004313B1 /* TCSComponentNameCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCSComponentNameCell.m; sourceTree = "<group>"; };
+		A479CE74077A1C0500A303A7 /* TCSComponentProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCSComponentProtocol.h; sourceTree = "<group>"; };
+		A479CEDC077AF14200A303A7 /* TCSComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCSComponent.h; sourceTree = "<group>"; };
+		A479CEDD077AF14200A303A7 /* TCSComponent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCSComponent.m; sourceTree = "<group>"; };
+		A47B0F0F0828E8BB00794A69 /* install-5.0.28.sh */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.script.sh; path = "install-5.0.28.sh"; sourceTree = "<group>"; };
+		A47D171F07778EA800A1B851 /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/ServerErrors.nib; sourceTree = "<group>"; };
+		A47D175C0778534C00A1B851 /* TCSServerErrorDisplayController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCSServerErrorDisplayController.h; sourceTree = "<group>"; };
+		A47D175D0778534C00A1B851 /* TCSServerErrorDisplayController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCSServerErrorDisplayController.m; sourceTree = "<group>"; };
+		A47D178A077857C700A1B851 /* TCSServerConfigError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCSServerConfigError.h; sourceTree = "<group>"; };
+		A47D178B077857C700A1B851 /* TCSServerConfigError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCSServerConfigError.m; sourceTree = "<group>"; };
+		A47E167507B0415E00CBFDAF /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/Authorize.nib; sourceTree = "<group>"; };
+		A47E167707B041A100CBFDAF /* TCSTomcatManagerAuthController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCSTomcatManagerAuthController.h; sourceTree = "<group>"; };
+		A47E167807B041A100CBFDAF /* TCSTomcatManagerAuthController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCSTomcatManagerAuthController.m; sourceTree = "<group>"; };
+		A47F9B86077DAD580051F3F6 /* TCSComponentViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCSComponentViewDataSource.h; sourceTree = "<group>"; };
+		A47F9B87077DAD580051F3F6 /* TCSComponentViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCSComponentViewDataSource.m; sourceTree = "<group>"; };
+		A480F39D07D88FEE00337752 /* info_flat.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = info_flat.tif; sourceTree = "<group>"; };
+		A482F214084799EB009A5DD2 /* TCSStartupItemManager+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TCSStartupItemManager+Private.h"; sourceTree = "<group>"; };
+		A483E6FA07DAB96D006D2176 /* TCSComponentViewDataSource+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TCSComponentViewDataSource+Private.h"; sourceTree = "<group>"; };
+		A48595260955D4BC008565A7 /* TCSLaunchDaemonManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCSLaunchDaemonManager.h; sourceTree = "<group>"; };
+		A48595270955D4BC008565A7 /* TCSLaunchDaemonManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCSLaunchDaemonManager.m; sourceTree = "<group>"; };
+		A48704D60746599D00DEBEED /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/Installer.nib; sourceTree = "<group>"; };
+		A48704D80746599D00DEBEED /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/Preferences.nib; sourceTree = "<group>"; };
+		A490971E08579C5100DF3606 /* add.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = add.tif; sourceTree = "<group>"; };
+		A490971F08579C5100DF3606 /* arrowright.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = arrowright.tif; sourceTree = "<group>"; };
+		A490972008579C5100DF3606 /* arrowup.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = arrowup.tif; sourceTree = "<group>"; };
+		A490972108579C5100DF3606 /* edit.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = edit.tif; sourceTree = "<group>"; };
+		A490972208579C5100DF3606 /* exc.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = exc.tif; sourceTree = "<group>"; };
+		A490972308579C5100DF3606 /* installer.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = installer.tif; sourceTree = "<group>"; };
+		A490972408579C5100DF3606 /* reload.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = reload.tif; sourceTree = "<group>"; };
+		A490972508579C5100DF3606 /* remove.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = remove.tif; sourceTree = "<group>"; };
+		A490972608579C5100DF3606 /* restart.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = restart.tif; sourceTree = "<group>"; };
+		A490972708579C5100DF3606 /* screen.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = screen.tif; sourceTree = "<group>"; };
+		A490972808579C5100DF3606 /* start.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = start.tif; sourceTree = "<group>"; };
+		A490972908579C5100DF3606 /* stop.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = stop.tif; sourceTree = "<group>"; };
+		A49097480857A02900DF3606 /* arrowleft.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = arrowleft.tif; sourceTree = "<group>"; };
+		A49097500857A0F800DF3606 /* info.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = info.tif; sourceTree = "<group>"; };
+		A49D0B2408C47C5700DFBADF /* Credits.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = Credits.rtf; sourceTree = "<group>"; };
+		A4A151E007529AF300BBA8F0 /* TCSSignalHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCSSignalHandler.h; sourceTree = "<group>"; };
+		A4A151E107529AF300BBA8F0 /* TCSSignalHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCSSignalHandler.m; sourceTree = "<group>"; };
+		A4A53BA5081D12FB000057B9 /* TCSPrefsToolbarDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCSPrefsToolbarDelegate.h; sourceTree = "<group>"; };
+		A4A53BA6081D12FB000057B9 /* TCSPrefsToolbarDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCSPrefsToolbarDelegate.m; sourceTree = "<group>"; };
+		A4A6F79F0953B29500CB42CD /* CatSound.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = CatSound.aif; sourceTree = "<group>"; };
+		A4A713ED0824202000DECC27 /* TCSInstallerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCSInstallerController.h; sourceTree = "<group>"; };
+		A4A713EE0824202000DECC27 /* TCSInstallerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCSInstallerController.m; sourceTree = "<group>"; };
+		A4B220A508B3E7C00023D6DE /* TCSLayoutManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCSLayoutManager.h; sourceTree = "<group>"; };
+		A4B220A608B3E7C00023D6DE /* TCSLayoutManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCSLayoutManager.m; sourceTree = "<group>"; };
+		A4B2D889085A487600C47C72 /* redo_b.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = redo_b.tif; sourceTree = "<group>"; };
+		A4B2D88A085A487600C47C72 /* redo_w.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = redo_w.tif; sourceTree = "<group>"; };
+		A4B4F6D808BBD807004121A8 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = /System/Library/Frameworks/Security.framework; sourceTree = "<absolute>"; };
+		A4B5B2B607AC074200995179 /* TCSTomcatManagerProxy+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TCSTomcatManagerProxy+Private.h"; sourceTree = "<group>"; };
+		A4C3F35B09579864002FC907 /* agent.template.plist */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.plist.xml; path = agent.template.plist; sourceTree = "<group>"; };
+		A4C3F35C09579864002FC907 /* daemon.template.plist */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.plist.xml; path = daemon.template.plist; sourceTree = "<group>"; };
+		A4C3F36009579877002FC907 /* CatSlapper.sdef */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.sdef; path = CatSlapper.sdef; sourceTree = "<group>"; };
+		A4C4434108449E1600411739 /* TCSProcess+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TCSProcess+Private.h"; sourceTree = "<group>"; };
+		A4C59E5D0969BCCA0098D3DA /* ExceptionHandling.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExceptionHandling.framework; path = /System/Library/Frameworks/ExceptionHandling.framework; sourceTree = "<absolute>"; };
+		A4C7CE330960720A005B68F2 /* TCSController+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TCSController+Private.h"; sourceTree = "<group>"; };
+		A4C930BC08B9F18F00AE53D5 /* NSArrayController+TCSUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArrayController+TCSUtils.h"; sourceTree = "<group>"; };
+		A4C930BD08B9F18F00AE53D5 /* NSArrayController+TCSUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArrayController+TCSUtils.m"; sourceTree = "<group>"; };
+		A4CAB59C078B5FAC00133FB7 /* TCSTomcatManagerProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCSTomcatManagerProxy.h; sourceTree = "<group>"; };
+		A4CAB59D078B5FAC00133FB7 /* TCSTomcatManagerProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCSTomcatManagerProxy.m; sourceTree = "<group>"; };
+		A4CDDD89087BFDEA00F95489 /* TCSAuthorizationHandlerVerifiedSums.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = TCSAuthorizationHandlerVerifiedSums.h; sourceTree = "<group>"; };
+		A4CF3CB0091974E9001BB25C /* NSApplication+Scripting.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = "NSApplication+Scripting.h"; sourceTree = "<group>"; };
+		A4CF3CB1091974E9001BB25C /* NSApplication+Scripting.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = "NSApplication+Scripting.m"; sourceTree = "<group>"; };
+		A4CF3CBC09197633001BB25C /* TCSController+Scripting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TCSController+Scripting.h"; sourceTree = "<group>"; };
+		A4D8A19B091AD24400ADD928 /* CatSlapperWidgetPlugin.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CatSlapperWidgetPlugin.xcodeproj; path = CatSlapperWidgetPlugin/CatSlapperWidgetPlugin.xcodeproj; sourceTree = "<group>"; };
+		A4D8A1AE091AD2F300ADD928 /* CatSlapper.css */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; path = CatSlapper.css; sourceTree = "<group>"; };
+		A4D8A1AF091AD2F300ADD928 /* CatSlapper.html */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.html; path = CatSlapper.html; sourceTree = "<group>"; };
+		A4D8A1B0091AD2F300ADD928 /* CatSlapper.js */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.javascript; path = CatSlapper.js; sourceTree = "<group>"; };
+		A4D8A1B1091AD2F300ADD928 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		A4D8A1B2091AD2F300ADD928 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A4E10840083E93F700A4D771 /* TCSProcess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCSProcess.h; sourceTree = "<group>"; };
+		A4E10841083E93F700A4D771 /* TCSProcess.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCSProcess.m; sourceTree = "<group>"; };
+		A4E69B2A099E784E009F930F /* TCSKittyPermissionsUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCSKittyPermissionsUtility.h; sourceTree = "<group>"; };
+		A4E69B2B099E784E009F930F /* TCSKittyPermissionsUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCSKittyPermissionsUtility.m; sourceTree = "<group>"; };
+		A4E69B80099E7C67009F930F /* TCSKittyPermissionsUtility+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TCSKittyPermissionsUtility+Private.h"; sourceTree = "<group>"; };
+		A4EA0A4009DCA40900AC4CF0 /* English */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = English; path = English.lproj/Acknowledgements.rtf; sourceTree = "<group>"; };
+		A4EA0A4209DCA40900AC4CF0 /* CatSlapperHelp.html */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.html.documentation; path = CatSlapperHelp.html; sourceTree = "<group>"; };
+		A4EA0A4409DCA40900AC4CF0 /* AboutTheComponentsDisplay.html */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.html.documentation; path = AboutTheComponentsDisplay.html; sourceTree = "<group>"; };
+		A4EA0A4509DCA40900AC4CF0 /* ConfiguringMultipleTomcatInstances.html */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.html.documentation; path = ConfiguringMultipleTomcatInstances.html; sourceTree = "<group>"; };
+		A4EA0A4609DCA40900AC4CF0 /* ControllingComponents.html */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.html.documentation; path = ControllingComponents.html; sourceTree = "<group>"; };
+		A4EA0A4709DCA40900AC4CF0 /* ControllingTomcat.html */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.html.documentation; path = ControllingTomcat.html; sourceTree = "<group>"; };
+		A4EA0A4809DCA40A00AC4CF0 /* DeployingApplications.html */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.html.documentation; path = DeployingApplications.html; sourceTree = "<group>"; };
+		A4EA0A4909DCA40A00AC4CF0 /* DetailedComponentInfo.html */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.html.documentation; path = DetailedComponentInfo.html; sourceTree = "<group>"; };
+		A4EA0A4A09DCA40A00AC4CF0 /* Faqs.html */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.html.documentation; path = Faqs.html; sourceTree = "<group>"; };
+		A4EA0A4B09DCA40A00AC4CF0 /* GettingMoreInformation.html */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.html.documentation; path = GettingMoreInformation.html; sourceTree = "<group>"; };
+		A4EA0A4C09DCA40A00AC4CF0 /* GettingStarted.html */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.html.documentation; path = GettingStarted.html; sourceTree = "<group>"; };
+		A4EA0A4D09DCA40A00AC4CF0 /* InitiatingManagerCommunication.html */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.html.documentation; path = InitiatingManagerCommunication.html; sourceTree = "<group>"; };
+		A4EA0A4E09DCA40A00AC4CF0 /* InstallingTomcat.html */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.html.documentation; path = InstallingTomcat.html; sourceTree = "<group>"; };
+		A4EA0A4F09DCA40A00AC4CF0 /* ManagingTomcatComponents.html */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.html.documentation; path = ManagingTomcatComponents.html; sourceTree = "<group>"; };
+		A4EA0A5009DCA40A00AC4CF0 /* ManagingTomcatConfigurations.html */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.html.documentation; path = ManagingTomcatConfigurations.html; sourceTree = "<group>"; };
+		A4EA0A5109DCA40A00AC4CF0 /* RunningCatSlapper.html */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.html.documentation; path = RunningCatSlapper.html; sourceTree = "<group>"; };
+		A4EA0A5209DCA40A00AC4CF0 /* RunningPrivileged.html */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.html.documentation; path = RunningPrivileged.html; sourceTree = "<group>"; };
+		A4EA0A5309DCA40A00AC4CF0 /* TomcatWontStart.html */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.html.documentation; path = TomcatWontStart.html; sourceTree = "<group>"; };
+		A4EA0A5409DCA40A00AC4CF0 /* UsingDefaultEnvironment.html */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.html.documentation; path = UsingDefaultEnvironment.html; sourceTree = "<group>"; };
+		A4EA0A5509DCA40A00AC4CF0 /* UsingLaunchd.html */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.html.documentation; path = UsingLaunchd.html; sourceTree = "<group>"; };
+		A4EA0A5609DCA40A00AC4CF0 /* UsingStartupItems.html */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.html.documentation; path = UsingStartupItems.html; sourceTree = "<group>"; };
+		A4EA0A5809DCA40A00AC4CF0 /* catslapper_help.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = catslapper_help.png; sourceTree = "<group>"; };
+		A4EA0A5909DCA40A00AC4CF0 /* catslapper_help_sm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = catslapper_help_sm.png; sourceTree = "<group>"; };
+		A4EA0A5A09DCA40A00AC4CF0 /* components_display.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = components_display.jpg; sourceTree = "<group>"; };
+		A4EA0A5B09DCA40A00AC4CF0 /* styles.css */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; path = styles.css; sourceTree = "<group>"; };
+		A4EA0A5D09DCA40A00AC4CF0 /* English */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.xml; name = English; path = English.lproj/CatSlapperHelp.tmproj; sourceTree = "<group>"; };
+		A4EA0A5F09DCA40A00AC4CF0 /* head.inc.php */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.script.php; path = head.inc.php; sourceTree = "<group>"; };
+		A4EA0A6009DCA40A00AC4CF0 /* index.tmpl */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; path = index.tmpl; sourceTree = "<group>"; };
+		A4EA0A6109DCA40A00AC4CF0 /* leftnav.inc.php */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.script.php; path = leftnav.inc.php; sourceTree = "<group>"; };
+		A4EA0A6209DCA40A00AC4CF0 /* tomcat_lists.inc.html */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.html.documentation; path = tomcat_lists.inc.html; sourceTree = "<group>"; };
+		A4EA0A6309DCA40A00AC4CF0 /* tomcat_website.inc.html */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.html.documentation; path = tomcat_website.inc.html; sourceTree = "<group>"; };
+		A4EA0A6409DCA40A00AC4CF0 /* topnav.inc.php */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.script.php; path = topnav.inc.php; sourceTree = "<group>"; };
+		A4EA0A6609DCA40A00AC4CF0 /* English */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = English; path = English.lproj/License.rtf; sourceTree = "<group>"; };
+		A4EA0A6809DCA40A00AC4CF0 /* English */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = English; path = English.lproj/ReadMe.rtf; sourceTree = "<group>"; };
+		A4EA0A6A09DCA40A00AC4CF0 /* English */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = English; path = "English.lproj/Release Notes.rtf"; sourceTree = "<group>"; };
+		A4EA0A6C09DCA40A00AC4CF0 /* English */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; name = English; path = English.lproj/RUNNING.txt; sourceTree = "<group>"; };
+		A4F133EE07A1301900D62EC6 /* TCSServerInfoResponseDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCSServerInfoResponseDelegate.h; sourceTree = "<group>"; };
+		A4F133EF07A1301900D62EC6 /* TCSServerInfoResponseDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCSServerInfoResponseDelegate.m; sourceTree = "<group>"; };
+		A4F133F207A1303E00D62EC6 /* TCSConnectorsInfoResponseDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCSConnectorsInfoResponseDelegate.h; sourceTree = "<group>"; };
+		A4F133F307A1303E00D62EC6 /* TCSConnectorsInfoResponseDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCSConnectorsInfoResponseDelegate.m; sourceTree = "<group>"; };
+		A4F133F607A1306200D62EC6 /* TCSHostsInfoResponseDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCSHostsInfoResponseDelegate.h; sourceTree = "<group>"; };
+		A4F133F707A1306200D62EC6 /* TCSHostsInfoResponseDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCSHostsInfoResponseDelegate.m; sourceTree = "<group>"; };
+		A4F133FA07A1308200D62EC6 /* TCSApplicationsInfoResponseDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCSApplicationsInfoResponseDelegate.h; sourceTree = "<group>"; };
+		A4F133FB07A1308200D62EC6 /* TCSApplicationsInfoResponseDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCSApplicationsInfoResponseDelegate.m; sourceTree = "<group>"; };
+		A4F133FE07A1309A00D62EC6 /* TCSApplicationStartResponseDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCSApplicationStartResponseDelegate.h; sourceTree = "<group>"; };
+		A4F133FF07A1309A00D62EC6 /* TCSApplicationStartResponseDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCSApplicationStartResponseDelegate.m; sourceTree = "<group>"; };
+		A4F1340207A130D900D62EC6 /* TCSApplicationStopResponseDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCSApplicationStopResponseDelegate.h; sourceTree = "<group>"; };
+		A4F1340307A130D900D62EC6 /* TCSApplicationStopResponseDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCSApplicationStopResponseDelegate.m; sourceTree = "<group>"; };
+		A4F1340607A130F800D62EC6 /* TCSApplicationReloadResponseDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCSApplicationReloadResponseDelegate.h; sourceTree = "<group>"; };
+		A4F1340707A130F800D62EC6 /* TCSApplicationReloadResponseDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCSApplicationReloadResponseDelegate.m; sourceTree = "<group>"; };
+		A4F1340A07A1311200D62EC6 /* TCSApplicationDeployResponseDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCSApplicationDeployResponseDelegate.h; sourceTree = "<group>"; };
+		A4F1340B07A1311200D62EC6 /* TCSApplicationDeployResponseDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCSApplicationDeployResponseDelegate.m; sourceTree = "<group>"; };
+		A4F1340E07A1312800D62EC6 /* TCSApplicationUndeployResponseDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCSApplicationUndeployResponseDelegate.h; sourceTree = "<group>"; };
+		A4F1340F07A1312800D62EC6 /* TCSApplicationUndeployResponseDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCSApplicationUndeployResponseDelegate.m; sourceTree = "<group>"; };
+		A4FD413C07DA572100E5614C /* TCSComponentOutlineViewColumn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCSComponentOutlineViewColumn.h; sourceTree = "<group>"; };
+		A4FD413D07DA572100E5614C /* TCSComponentOutlineViewColumn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCSComponentOutlineViewColumn.m; sourceTree = "<group>"; };
+		A4FEB2F309451B85006D05D9 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D11072E0486CEB800E47090 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
+				A42088700827A55300E50304 /* AGRegex.framework in Frameworks */,
+				A4B4F6D908BBD807004121A8 /* Security.framework in Frameworks */,
+				A4C59E5E0969BCCA0098D3DA /* ExceptionHandling.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A4C59E5D0969BCCA0098D3DA /* ExceptionHandling.framework */,
+				A4B4F6D808BBD807004121A8 /* Security.framework */,
+				A420886F0827A55300E50304 /* AGRegex.framework */,
+				1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		1058C7A2FEA54F0111CA2CBB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				29B97325FDCFA39411CA2CEA /* Foundation.framework */,
+				29B97324FDCFA39411CA2CEA /* AppKit.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D1107320486CEB800E47090 /* CatSlapper.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* TomcatSlapper */ = {
+			isa = PBXGroup;
+			children = (
+				A4168D5E074245500016667B /* Source */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				A46119E00C6674D500372A4F /* Tools */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+				A4D8A11F091ACF8900ADD928 /* Widget */,
+			);
+			name = TomcatSlapper;
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A4EA0A3E09DCA40900AC4CF0 /* Documentation */,
+				A4C3F35F09579877002FC907 /* AppleScript */,
+				A4C3F35A09579864002FC907 /* LaunchDaemons */,
+				A4168D53074244EE0016667B /* Interface */,
+				A49D0B2408C47C5700DFBADF /* Credits.rtf */,
+				A4168DEB074249420016667B /* Localizable.strings */,
+				8D1107310486CEB800E47090 /* Info.plist */,
+				A4168D54074244EE0016667B /* InfoPlist.strings */,
+				A4168DAF074245BA0016667B /* Installer */,
+				A4374B110871F6CE0026C5EE /* Scripts */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */,
+				1058C7A2FEA54F0111CA2CBB /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A4168D53074244EE0016667B /* Interface */ = {
+			isa = PBXGroup;
+			children = (
+				A4A6F79C0953B29500CB42CD /* Sound */,
+				A404345A075CA3E1001F035F /* catslapper.icns */,
+				A4168E0807424CA10016667B /* Images */,
+				A48704D50746599D00DEBEED /* Installer.nib */,
+				A48704D70746599D00DEBEED /* Preferences.nib */,
+				A4168D56074244EE0016667B /* MainMenu.nib */,
+				A47D171E07778EA800A1B851 /* ServerErrors.nib */,
+				A47E167407B0415E00CBFDAF /* Authorize.nib */,
+				A43D3798086199C800B32AD3 /* Deployer.nib */,
+			);
+			path = Interface;
+			sourceTree = "<group>";
+		};
+		A4168D5E074245500016667B /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				A4168D85074245500016667B /* TomcatSlapper_Prefix.pch */,
+				A4168D5F074245500016667B /* main.m */,
+				A4168D6A074245500016667B /* TCSConstants.h */,
+				A4168D6B074245500016667B /* TCSConstants.m */,
+				A4168E2707424E4A0016667B /* Controller */,
+				A4F133ED07A12FD500D62EC6 /* TomcatManager */,
+				A4168E2A07424E510016667B /* Model */,
+				A4168E2D07424E550016667B /* View */,
+				A4168E3007424E5C0016667B /* Util */,
+				A4CF3CAF091974C5001BB25C /* Scripting */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		A4168DAF074245BA0016667B /* Installer */ = {
+			isa = PBXGroup;
+			children = (
+				A47B0F0F0828E8BB00794A69 /* install-5.0.28.sh */,
+				A4168DB0074245BE0016667B /* jakarta-tomcat-5.0.28.tar.gz */,
+			);
+			path = Installer;
+			sourceTree = "<group>";
+		};
+		A4168E0807424CA10016667B /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				A459F5F008EE3B7200051EFF /* texture */,
+				A44877DF087D4D85006CBA5D /* cancel_b.tif */,
+				A44877E0087D4D85006CBA5D /* cancel_w.tif */,
+				A4B2D889085A487600C47C72 /* redo_b.tif */,
+				A4B2D88A085A487600C47C72 /* redo_w.tif */,
+				A49097500857A0F800DF3606 /* info.tif */,
+				A49097480857A02900DF3606 /* arrowleft.tif */,
+				A490971E08579C5100DF3606 /* add.tif */,
+				A490971F08579C5100DF3606 /* arrowright.tif */,
+				A490972008579C5100DF3606 /* arrowup.tif */,
+				A490972108579C5100DF3606 /* edit.tif */,
+				A490972208579C5100DF3606 /* exc.tif */,
+				A490972308579C5100DF3606 /* installer.tif */,
+				A490972408579C5100DF3606 /* reload.tif */,
+				A490972508579C5100DF3606 /* remove.tif */,
+				A490972608579C5100DF3606 /* restart.tif */,
+				A490972708579C5100DF3606 /* screen.tif */,
+				A490972808579C5100DF3606 /* start.tif */,
+				A490972908579C5100DF3606 /* stop.tif */,
+				A42BEAC90853ABE800A9D377 /* connector.tif */,
+				A42BEACA0853ABE800A9D377 /* host.tif */,
+				A4180DF208529A33003DFCEE /* appearance.tif */,
+				A4180DF308529A33003DFCEE /* application.tif */,
+				A4180DF508529A33003DFCEE /* default.tif */,
+				A4180DF708529A33003DFCEE /* manager.tif */,
+				A4180DF808529A33003DFCEE /* root.tif */,
+				A480F39D07D88FEE00337752 /* info_flat.tif */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		A4168E2707424E4A0016667B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A4168D6C074245500016667B /* TCSController.h */,
+				A4168D6D074245500016667B /* TCSController.m */,
+				A4C7CE330960720A005B68F2 /* TCSController+Private.h */,
+				A4168D81074245500016667B /* TCSToolbarDelegate.h */,
+				A4168D82074245500016667B /* TCSToolbarDelegate.m */,
+				A4168D62074245500016667B /* TCSCatSlapper+Private.h */,
+				A4168D63074245500016667B /* TCSCatSlapper.h */,
+				A4168D64074245500016667B /* TCSCatSlapper.m */,
+				A4168D60074245500016667B /* TCSCatWrangler.h */,
+				A4168D61074245500016667B /* TCSCatWrangler.m */,
+				A482F214084799EB009A5DD2 /* TCSStartupItemManager+Private.h */,
+				A4702078083B688800916A23 /* TCSStartupItemManager.h */,
+				A4702079083B688800916A23 /* TCSStartupItemManager.m */,
+				A48595260955D4BC008565A7 /* TCSLaunchDaemonManager.h */,
+				A48595270955D4BC008565A7 /* TCSLaunchDaemonManager.m */,
+				A41B4BCA09632438004F46CF /* TCSLaunchDaemonManager+Private.h */,
+				A4168D7A074245500016667B /* TCSPrefController+Private.h */,
+				A4168D7B074245500016667B /* TCSPrefController.h */,
+				A4168D7C074245500016667B /* TCSPrefController.m */,
+				A4A53BA5081D12FB000057B9 /* TCSPrefsToolbarDelegate.h */,
+				A4A53BA6081D12FB000057B9 /* TCSPrefsToolbarDelegate.m */,
+				A439EA7208D835FC00BAC32C /* TCSInstallerController+Private.h */,
+				A4A713ED0824202000DECC27 /* TCSInstallerController.h */,
+				A4A713EE0824202000DECC27 /* TCSInstallerController.m */,
+				A47D175C0778534C00A1B851 /* TCSServerErrorDisplayController.h */,
+				A47D175D0778534C00A1B851 /* TCSServerErrorDisplayController.m */,
+				A483E6FA07DAB96D006D2176 /* TCSComponentViewDataSource+Private.h */,
+				A47F9B86077DAD580051F3F6 /* TCSComponentViewDataSource.h */,
+				A47F9B87077DAD580051F3F6 /* TCSComponentViewDataSource.m */,
+				A4059BE20910F49B0032CC10 /* TCSKittyArrayController.h */,
+				A4059BE30910F49B0032CC10 /* TCSKittyArrayController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		A4168E2A07424E510016667B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A4168D70074245500016667B /* TCSKitty.h */,
+				A4168D71074245500016667B /* TCSKitty.m */,
+				A479CE74077A1C0500A303A7 /* TCSComponentProtocol.h */,
+				A479CEDC077AF14200A303A7 /* TCSComponent.h */,
+				A479CEDD077AF14200A303A7 /* TCSComponent.m */,
+				A45B3BF4078AC91600515E66 /* TCSConnectorComponent.h */,
+				A45B3BF5078AC91600515E66 /* TCSConnectorComponent.m */,
+				A45985790797F50500EA14D8 /* TCSHostComponent.h */,
+				A459857A0797F50500EA14D8 /* TCSHostComponent.m */,
+				A459857D0797F52200EA14D8 /* TCSAppComponent.h */,
+				A459857E0797F52200EA14D8 /* TCSAppComponent.m */,
+				A47D178A077857C700A1B851 /* TCSServerConfigError.h */,
+				A47D178B077857C700A1B851 /* TCSServerConfigError.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		A4168E2D07424E550016667B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A4FD413C07DA572100E5614C /* TCSComponentOutlineViewColumn.h */,
+				A4FD413D07DA572100E5614C /* TCSComponentOutlineViewColumn.m */,
+				A479408D078CA2CE004313B1 /* TCSComponentNameCell.h */,
+				A479408E078CA2CE004313B1 /* TCSComponentNameCell.m */,
+				A4168E3307424E870016667B /* Console */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		A4168E3007424E5C0016667B /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				A4374B4A0872BD800026C5EE /* TCSCatSpanker.h */,
+				A4374B800872BEF90026C5EE /* TCSCatSpanker+Private.h */,
+				A4374B4B0872BD800026C5EE /* TCSCatSpanker.m */,
+				A4374B4C0872BD800026C5EE /* TCSUserShell.h */,
+				A4374B4D0872BD800026C5EE /* TCSUserShell.m */,
+				A4583268074ABED200A4C52C /* TCSIOUtils.h */,
+				A4583269074ABED200A4C52C /* TCSIOUtils.m */,
+				A4C4434108449E1600411739 /* TCSProcess+Private.h */,
+				A4E10840083E93F700A4D771 /* TCSProcess.h */,
+				A4E10841083E93F700A4D771 /* TCSProcess.m */,
+				A4A151E007529AF300BBA8F0 /* TCSSignalHandler.h */,
+				A4A151E107529AF300BBA8F0 /* TCSSignalHandler.m */,
+				A4168D72074245500016667B /* TCSKittyParsing.h */,
+				A4168D73074245500016667B /* TCSKittyParsing.m */,
+				A4168D76074245500016667B /* TCSLogger.h */,
+				A4168D77074245500016667B /* TCSLogger.m */,
+				A4168D78074245500016667B /* TCSNoPopupSelectionTransformer.h */,
+				A4168D79074245500016667B /* TCSNoPopupSelectionTransformer.m */,
+				A46FBF9008716CC3008C279A /* TCSAuthorizationHandler.h */,
+				A46FBF9108716CC3008C279A /* TCSAuthorizationHandler.m */,
+				A4CDDD89087BFDEA00F95489 /* TCSAuthorizationHandlerVerifiedSums.h */,
+				A4C930BC08B9F18F00AE53D5 /* NSArrayController+TCSUtils.h */,
+				A4C930BD08B9F18F00AE53D5 /* NSArrayController+TCSUtils.m */,
+				A4E69B2A099E784E009F930F /* TCSKittyPermissionsUtility.h */,
+				A4E69B2B099E784E009F930F /* TCSKittyPermissionsUtility.m */,
+				A4E69B80099E7C67009F930F /* TCSKittyPermissionsUtility+Private.h */,
+			);
+			name = Util;
+			sourceTree = "<group>";
+		};
+		A4168E3307424E870016667B /* Console */ = {
+			isa = PBXGroup;
+			children = (
+				A4168D65074245500016667B /* TCSConsoleServer+Private.h */,
+				A4168D66074245500016667B /* TCSConsoleServer.h */,
+				A4168D67074245500016667B /* TCSConsoleServer.m */,
+				A4168D68074245500016667B /* TCSConsoleView.h */,
+				A4168D69074245500016667B /* TCSConsoleView.m */,
+				A4B220A508B3E7C00023D6DE /* TCSLayoutManager.h */,
+				A4B220A608B3E7C00023D6DE /* TCSLayoutManager.m */,
+			);
+			name = Console;
+			sourceTree = "<group>";
+		};
+		A4374B110871F6CE0026C5EE /* Scripts */ = {
+			isa = PBXGroup;
+			children = (
+				A4374B120871F6CE0026C5EE /* DisableStartupItem.sh */,
+				A4374B130871F6CE0026C5EE /* EnableStartupItem.sh */,
+				A4374B140871F6CE0026C5EE /* StartupItemTemplate */,
+				A4374B150871F6CE0026C5EE /* StartupParameters.plist */,
+				A4374B160871F6CE0026C5EE /* TomcatSlapper.sh */,
+			);
+			path = Scripts;
+			sourceTree = "<group>";
+		};
+		A459F5F008EE3B7200051EFF /* texture */ = {
+			isa = PBXGroup;
+			children = (
+				A418AE2208F07ABD00F0E364 /* bg_combined.png */,
+				A418AE0408F03C8D00F0E364 /* bg_top.png */,
+				A418ADF208F0360000F0E364 /* bg_bottom.png */,
+				A418ADEA08F034BB00F0E364 /* bg_middle_bottom.png */,
+				A418ADC008F01F6200F0E364 /* bg_middle_top.png */,
+			);
+			name = texture;
+			sourceTree = "<group>";
+		};
+		A4604D8C0812A28A007168DA /* delegates */ = {
+			isa = PBXGroup;
+			children = (
+				A42E770D079D411100B067BD /* TCSTomcatManagerResponseDelegate.h */,
+				A42E770E079D411100B067BD /* TCSTomcatManagerResponseDelegate.m */,
+				A4604D920812A2BB007168DA /* updates */,
+				A4604D970812A2F0007168DA /* actions */,
+			);
+			name = delegates;
+			sourceTree = "<group>";
+		};
+		A4604D920812A2BB007168DA /* updates */ = {
+			isa = PBXGroup;
+			children = (
+				A4F133EE07A1301900D62EC6 /* TCSServerInfoResponseDelegate.h */,
+				A4F133EF07A1301900D62EC6 /* TCSServerInfoResponseDelegate.m */,
+				A4604D6408129C6A007168DA /* TCSServerStatusResponseDelegate.h */,
+				A4604D6508129C6A007168DA /* TCSServerStatusResponseDelegate.m */,
+				A4F133F207A1303E00D62EC6 /* TCSConnectorsInfoResponseDelegate.h */,
+				A4F133F307A1303E00D62EC6 /* TCSConnectorsInfoResponseDelegate.m */,
+				A4F133F607A1306200D62EC6 /* TCSHostsInfoResponseDelegate.h */,
+				A4F133F707A1306200D62EC6 /* TCSHostsInfoResponseDelegate.m */,
+				A4F133FA07A1308200D62EC6 /* TCSApplicationsInfoResponseDelegate.h */,
+				A4F133FB07A1308200D62EC6 /* TCSApplicationsInfoResponseDelegate.m */,
+				A4604D860812A270007168DA /* TCSApplicationsStatusResponseDelegate.h */,
+				A4604D870812A270007168DA /* TCSApplicationsStatusResponseDelegate.m */,
+			);
+			name = updates;
+			sourceTree = "<group>";
+		};
+		A4604D970812A2F0007168DA /* actions */ = {
+			isa = PBXGroup;
+			children = (
+				A4F133FE07A1309A00D62EC6 /* TCSApplicationStartResponseDelegate.h */,
+				A4F133FF07A1309A00D62EC6 /* TCSApplicationStartResponseDelegate.m */,
+				A4F1340207A130D900D62EC6 /* TCSApplicationStopResponseDelegate.h */,
+				A4F1340307A130D900D62EC6 /* TCSApplicationStopResponseDelegate.m */,
+				A4F1340607A130F800D62EC6 /* TCSApplicationReloadResponseDelegate.h */,
+				A4F1340707A130F800D62EC6 /* TCSApplicationReloadResponseDelegate.m */,
+				A4F1340A07A1311200D62EC6 /* TCSApplicationDeployResponseDelegate.h */,
+				A4F1340B07A1311200D62EC6 /* TCSApplicationDeployResponseDelegate.m */,
+				A4F1340E07A1312800D62EC6 /* TCSApplicationUndeployResponseDelegate.h */,
+				A4F1340F07A1312800D62EC6 /* TCSApplicationUndeployResponseDelegate.m */,
+			);
+			name = actions;
+			sourceTree = "<group>";
+		};
+		A46119E00C6674D500372A4F /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				A46119E10C6674D500372A4F /* cvstat.pl */,
+				A46119E20C6674D500372A4F /* HelpGen.sh */,
+				A46119E30C6674D500372A4F /* HelpIndexer.sh */,
+				A46119E40C6674D500372A4F /* SetVerifiedSums.sh */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		A4A6F79C0953B29500CB42CD /* Sound */ = {
+			isa = PBXGroup;
+			children = (
+				A4A6F79F0953B29500CB42CD /* CatSound.aif */,
+			);
+			name = Sound;
+			path = sound;
+			sourceTree = "<group>";
+		};
+		A4C3F35A09579864002FC907 /* LaunchDaemons */ = {
+			isa = PBXGroup;
+			children = (
+				A4C3F35B09579864002FC907 /* agent.template.plist */,
+				A4C3F35C09579864002FC907 /* daemon.template.plist */,
+			);
+			path = LaunchDaemons;
+			sourceTree = "<group>";
+		};
+		A4C3F35F09579877002FC907 /* AppleScript */ = {
+			isa = PBXGroup;
+			children = (
+				A4C3F36009579877002FC907 /* CatSlapper.sdef */,
+			);
+			path = AppleScript;
+			sourceTree = "<group>";
+		};
+		A4CF3CAF091974C5001BB25C /* Scripting */ = {
+			isa = PBXGroup;
+			children = (
+				A4CF3CB0091974E9001BB25C /* NSApplication+Scripting.h */,
+				A4CF3CB1091974E9001BB25C /* NSApplication+Scripting.m */,
+				A4CF3CBC09197633001BB25C /* TCSController+Scripting.h */,
+			);
+			name = Scripting;
+			sourceTree = "<group>";
+		};
+		A4D8A11F091ACF8900ADD928 /* Widget */ = {
+			isa = PBXGroup;
+			children = (
+				A4FEB2F309451B85006D05D9 /* Icon.png */,
+				A43BA9B2093D78E2007E4C32 /* off.png */,
+				A43BA9B3093D78E2007E4C32 /* on.png */,
+				A43BA8B5093CE416007E4C32 /* power.png */,
+				A43BA8B6093CE416007E4C32 /* refresh.png */,
+				A4D8A1AE091AD2F300ADD928 /* CatSlapper.css */,
+				A4D8A1AF091AD2F300ADD928 /* CatSlapper.html */,
+				A4D8A1B0091AD2F300ADD928 /* CatSlapper.js */,
+				A4D8A1B1091AD2F300ADD928 /* Default.png */,
+				A4D8A1B2091AD2F300ADD928 /* Info.plist */,
+				A4D8A19B091AD24400ADD928 /* CatSlapperWidgetPlugin.xcodeproj */,
+			);
+			path = Widget;
+			sourceTree = "<group>";
+		};
+		A4D8A19C091AD24400ADD928 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A4D8A1A1091AD24400ADD928 /* CatSlapper.widgetplugin */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A4EA0A3E09DCA40900AC4CF0 /* Documentation */ = {
+			isa = PBXGroup;
+			children = (
+				A4EA0A3F09DCA40900AC4CF0 /* Acknowledgements.rtf */,
+				A4EA0A4109DCA40900AC4CF0 /* CatSlapperHelp */,
+				A4EA0A5C09DCA40A00AC4CF0 /* CatSlapperHelp.tmproj */,
+				A4EA0A5E09DCA40A00AC4CF0 /* Include */,
+				A4EA0A6509DCA40A00AC4CF0 /* License.rtf */,
+				A4EA0A6709DCA40A00AC4CF0 /* ReadMe.rtf */,
+				A4EA0A6909DCA40A00AC4CF0 /* Release Notes.rtf */,
+				A4EA0A6B09DCA40A00AC4CF0 /* RUNNING.txt */,
+			);
+			path = Documentation;
+			sourceTree = "<group>";
+		};
+		A4EA0A4109DCA40900AC4CF0 /* CatSlapperHelp */ = {
+			isa = PBXGroup;
+			children = (
+				A4EA0A4209DCA40900AC4CF0 /* CatSlapperHelp.html */,
+				A4EA0A4309DCA40900AC4CF0 /* Contents */,
+				A4EA0A5709DCA40A00AC4CF0 /* images */,
+				A4EA0A5B09DCA40A00AC4CF0 /* styles.css */,
+			);
+			name = CatSlapperHelp;
+			path = English.lproj/CatSlapperHelp;
+			sourceTree = "<group>";
+		};
+		A4EA0A4309DCA40900AC4CF0 /* Contents */ = {
+			isa = PBXGroup;
+			children = (
+				A4EA0A4409DCA40900AC4CF0 /* AboutTheComponentsDisplay.html */,
+				A4EA0A4509DCA40900AC4CF0 /* ConfiguringMultipleTomcatInstances.html */,
+				A4EA0A4609DCA40900AC4CF0 /* ControllingComponents.html */,
+				A4EA0A4709DCA40900AC4CF0 /* ControllingTomcat.html */,
+				A4EA0A4809DCA40A00AC4CF0 /* DeployingApplications.html */,
+				A4EA0A4909DCA40A00AC4CF0 /* DetailedComponentInfo.html */,
+				A4EA0A4A09DCA40A00AC4CF0 /* Faqs.html */,
+				A4EA0A4B09DCA40A00AC4CF0 /* GettingMoreInformation.html */,
+				A4EA0A4C09DCA40A00AC4CF0 /* GettingStarted.html */,
+				A4EA0A4D09DCA40A00AC4CF0 /* InitiatingManagerCommunication.html */,
+				A4EA0A4E09DCA40A00AC4CF0 /* InstallingTomcat.html */,
+				A4EA0A4F09DCA40A00AC4CF0 /* ManagingTomcatComponents.html */,
+				A4EA0A5009DCA40A00AC4CF0 /* ManagingTomcatConfigurations.html */,
+				A4EA0A5109DCA40A00AC4CF0 /* RunningCatSlapper.html */,
+				A4EA0A5209DCA40A00AC4CF0 /* RunningPrivileged.html */,
+				A4EA0A5309DCA40A00AC4CF0 /* TomcatWontStart.html */,
+				A4EA0A5409DCA40A00AC4CF0 /* UsingDefaultEnvironment.html */,
+				A4EA0A5509DCA40A00AC4CF0 /* UsingLaunchd.html */,
+				A4EA0A5609DCA40A00AC4CF0 /* UsingStartupItems.html */,
+			);
+			path = Contents;
+			sourceTree = "<group>";
+		};
+		A4EA0A5709DCA40A00AC4CF0 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				A4EA0A5809DCA40A00AC4CF0 /* catslapper_help.png */,
+				A4EA0A5909DCA40A00AC4CF0 /* catslapper_help_sm.png */,
+				A4EA0A5A09DCA40A00AC4CF0 /* components_display.jpg */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+		A4EA0A5E09DCA40A00AC4CF0 /* Include */ = {
+			isa = PBXGroup;
+			children = (
+				A4EA0A5F09DCA40A00AC4CF0 /* head.inc.php */,
+				A4EA0A6009DCA40A00AC4CF0 /* index.tmpl */,
+				A4EA0A6109DCA40A00AC4CF0 /* leftnav.inc.php */,
+				A4EA0A6209DCA40A00AC4CF0 /* tomcat_lists.inc.html */,
+				A4EA0A6309DCA40A00AC4CF0 /* tomcat_website.inc.html */,
+				A4EA0A6409DCA40A00AC4CF0 /* topnav.inc.php */,
+			);
+			name = Include;
+			path = English.lproj/Include;
+			sourceTree = "<group>";
+		};
+		A4F133ED07A12FD500D62EC6 /* TomcatManager */ = {
+			isa = PBXGroup;
+			children = (
+				A4B5B2B607AC074200995179 /* TCSTomcatManagerProxy+Private.h */,
+				A4CAB59C078B5FAC00133FB7 /* TCSTomcatManagerProxy.h */,
+				A4CAB59D078B5FAC00133FB7 /* TCSTomcatManagerProxy.m */,
+				A42E9D3707B1043000757A66 /* TCSTomcatManagerAuthController+Private.h */,
+				A47E167707B041A100CBFDAF /* TCSTomcatManagerAuthController.h */,
+				A47E167807B041A100CBFDAF /* TCSTomcatManagerAuthController.m */,
+				A43D378C0860E0AE00B32AD3 /* TCSTomcatManagerDeployController.h */,
+				A43D378D0860E0AE00B32AD3 /* TCSTomcatManagerDeployController.m */,
+				A4604D8C0812A28A007168DA /* delegates */,
+			);
+			name = TomcatManager;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8D1107260486CEB800E47090 /* TomcatSlapper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A4DFDD9908DC9BCD00DD149C /* Build configuration list for PBXNativeTarget "TomcatSlapper" */;
+			buildPhases = (
+				A4CDDD63087B3D9900F95489 /* ShellScript */,
+				A4DD527008B29974006A639A /* CopyFiles */,
+				8D1107290486CEB800E47090 /* Resources */,
+				8D11072C0486CEB800E47090 /* Sources */,
+				8D11072E0486CEB800E47090 /* Frameworks */,
+				A4F491070743A14F00702937 /* CopyFiles */,
+				A47B0F0E0828E87F00794A69 /* CopyFiles */,
+				A44B1AA8083BED5600BBF494 /* CopyFiles */,
+				A4C3F88B09182BD400B10553 /* ShellScript */,
+				A4D8A1B3091AD30700ADD928 /* CopyFiles */,
+				A4748EA408AAAA8200854772 /* ShellScript */,
+				A4EEF49C087DE46800C38099 /* ShellScript */,
+				A4D8A1F0091B8D4A00ADD928 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A4D8A1A5091AD25000ADD928 /* PBXTargetDependency */,
+			);
+			name = TomcatSlapper;
+			productInstallPath = "$(HOME)/Applications";
+			productName = TomcatSlapper;
+			productReference = 8D1107320486CEB800E47090 /* CatSlapper.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = A4DFDD9E08DC9BCD00DD149C /* Build configuration list for PBXProject "TomcatSlapper" */;
+			compatibilityVersion = "Xcode 2.4";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* TomcatSlapper */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = A4D8A19C091AD24400ADD928 /* Products */;
+					ProjectRef = A4D8A19B091AD24400ADD928 /* CatSlapperWidgetPlugin.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				8D1107260486CEB800E47090 /* TomcatSlapper */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		A4D8A1A1091AD24400ADD928 /* CatSlapper.widgetplugin */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = CatSlapper.widgetplugin;
+			remoteRef = A4D8A1A0091AD24400ADD928 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D1107290486CEB800E47090 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A454F94709588A1F00677758 /* agent.template.plist in Resources */,
+				A454F94809588A1F00677758 /* daemon.template.plist in Resources */,
+				A4168D58074244EE0016667B /* InfoPlist.strings in Resources */,
+				A4168D59074244EE0016667B /* MainMenu.nib in Resources */,
+				A4168DED074249420016667B /* Localizable.strings in Resources */,
+				A48704D90746599D00DEBEED /* Installer.nib in Resources */,
+				A48704DA0746599D00DEBEED /* Preferences.nib in Resources */,
+				A404345B075CA3E1001F035F /* catslapper.icns in Resources */,
+				A47D172007778EA800A1B851 /* ServerErrors.nib in Resources */,
+				A47E167607B0415E00CBFDAF /* Authorize.nib in Resources */,
+				A480F39E07D88FEE00337752 /* info_flat.tif in Resources */,
+				A4180DF908529A33003DFCEE /* appearance.tif in Resources */,
+				A4180DFA08529A33003DFCEE /* application.tif in Resources */,
+				A4180DFC08529A33003DFCEE /* default.tif in Resources */,
+				A4180DFE08529A33003DFCEE /* manager.tif in Resources */,
+				A4180DFF08529A33003DFCEE /* root.tif in Resources */,
+				A42BEACB0853ABE800A9D377 /* connector.tif in Resources */,
+				A42BEACC0853ABE800A9D377 /* host.tif in Resources */,
+				A490972A08579C5100DF3606 /* add.tif in Resources */,
+				A490972B08579C5100DF3606 /* arrowright.tif in Resources */,
+				A490972C08579C5100DF3606 /* arrowup.tif in Resources */,
+				A490972D08579C5100DF3606 /* edit.tif in Resources */,
+				A490972E08579C5100DF3606 /* exc.tif in Resources */,
+				A490972F08579C5100DF3606 /* installer.tif in Resources */,
+				A490973008579C5100DF3606 /* reload.tif in Resources */,
+				A490973108579C5100DF3606 /* remove.tif in Resources */,
+				A490973208579C5100DF3606 /* restart.tif in Resources */,
+				A490973308579C5100DF3606 /* screen.tif in Resources */,
+				A490973408579C5100DF3606 /* start.tif in Resources */,
+				A490973508579C5100DF3606 /* stop.tif in Resources */,
+				A49097490857A02900DF3606 /* arrowleft.tif in Resources */,
+				A49097510857A0F800DF3606 /* info.tif in Resources */,
+				A4B2D88B085A487600C47C72 /* redo_b.tif in Resources */,
+				A4B2D88C085A487600C47C72 /* redo_w.tif in Resources */,
+				A43D379A086199C800B32AD3 /* Deployer.nib in Resources */,
+				A44877E1087D4D85006CBA5D /* cancel_b.tif in Resources */,
+				A44877E2087D4D85006CBA5D /* cancel_w.tif in Resources */,
+				A49D0B2508C47C5700DFBADF /* Credits.rtf in Resources */,
+				A418ADC108F01F6200F0E364 /* bg_middle_top.png in Resources */,
+				A418ADEB08F034BB00F0E364 /* bg_middle_bottom.png in Resources */,
+				A418ADF308F0360000F0E364 /* bg_bottom.png in Resources */,
+				A418AE0508F03C8D00F0E364 /* bg_top.png in Resources */,
+				A418AE2308F07ABD00F0E364 /* bg_combined.png in Resources */,
+				A4A6F7A20953B29500CB42CD /* CatSound.aif in Resources */,
+				A4C3F36109579877002FC907 /* CatSlapper.sdef in Resources */,
+				A4EA0A6D09DCA40A00AC4CF0 /* Acknowledgements.rtf in Resources */,
+				A4EA0A8D09DCA40A00AC4CF0 /* License.rtf in Resources */,
+				A4EA0A9009DCA40A00AC4CF0 /* RUNNING.txt in Resources */,
+				A46119E50C6674D500372A4F /* cvstat.pl in Resources */,
+				A46119E60C6674D500372A4F /* HelpGen.sh in Resources */,
+				A46119E70C6674D500372A4F /* HelpIndexer.sh in Resources */,
+				A46119E80C6674D500372A4F /* SetVerifiedSums.sh in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A4748EA408AAAA8200854772 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 12;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = $PROJECT_DIR/Tools/HelpGen.sh;
+		};
+		A4C3F88B09182BD400B10553 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				$PROJECT_DIR/Resources/AppleScript/CatSlapper.sdef,
+			);
+			outputPaths = (
+				$PROJECT_DIR/Resources/AppleScript/CatSlapper.scriptSuite,
+				$PROJECT_DIR/Resources/AppleScript/CatSlapper.scriptTerminology,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/bin/sdp -f st -o $BUILD_DIR/$CONFIGURATION/$FULL_PRODUCT_NAME/Contents/Resources $PROJECT_DIR/Resources/AppleScript/CatSlapper.sdef";
+		};
+		A4CDDD63087B3D9900F95489 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PROJECT_DIR}/Scripts/TomcatSlapper.sh",
+				"${PROJECT_DIR}/Installer/install-5.0.28.sh",
+				"${PROJECT_DIR}/Scripts/SetVerifiedSums.sh",
+			);
+			outputPaths = (
+				"${PROJECT_DIR}/Source/TCSAuthorizationHandlerVerifiedSums.h",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = $PROJECT_DIR/Tools/SetVerifiedSums.sh;
+		};
+		A4D8A1F0091B8D4A00ADD928 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "ditto $PROJECT_DIR/Widget/CatSlapperWidgetPlugin/build/$CONFIGURATION/CatSlapper.widgetplugin $BUILD_DIR/$CONFIGURATION/CatSlapper.wdgt/CatSlapper.widgetplugin";
+		};
+		A4EEF49C087DE46800C38099 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 12;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#${PROJECT_DIR}/Tools/HelpIndexer.sh";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D11072C0486CEB800E47090 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4168D86074245500016667B /* main.m in Sources */,
+				A4168D88074245500016667B /* TCSCatWrangler.m in Sources */,
+				A4168D8B074245500016667B /* TCSCatSlapper.m in Sources */,
+				A4168D8E074245500016667B /* TCSConsoleServer.m in Sources */,
+				A4168D90074245500016667B /* TCSConsoleView.m in Sources */,
+				A4168D92074245500016667B /* TCSConstants.m in Sources */,
+				A4168D94074245500016667B /* TCSController.m in Sources */,
+				A4168D98074245500016667B /* TCSKitty.m in Sources */,
+				A4168D9A074245500016667B /* TCSKittyParsing.m in Sources */,
+				A4168D9E074245500016667B /* TCSLogger.m in Sources */,
+				A4168DA0074245500016667B /* TCSNoPopupSelectionTransformer.m in Sources */,
+				A4168DA3074245500016667B /* TCSPrefController.m in Sources */,
+				A4168DA9074245500016667B /* TCSToolbarDelegate.m in Sources */,
+				A458326B074ABED200A4C52C /* TCSIOUtils.m in Sources */,
+				A4A151E307529AF300BBA8F0 /* TCSSignalHandler.m in Sources */,
+				A47D175F0778534C00A1B851 /* TCSServerErrorDisplayController.m in Sources */,
+				A47D178D077857C700A1B851 /* TCSServerConfigError.m in Sources */,
+				A479CEDF077AF14200A303A7 /* TCSComponent.m in Sources */,
+				A47F9B89077DAD580051F3F6 /* TCSComponentViewDataSource.m in Sources */,
+				A45B3BF7078AC91600515E66 /* TCSConnectorComponent.m in Sources */,
+				A4CAB59F078B5FAC00133FB7 /* TCSTomcatManagerProxy.m in Sources */,
+				A4794090078CA2CE004313B1 /* TCSComponentNameCell.m in Sources */,
+				A459857C0797F50500EA14D8 /* TCSHostComponent.m in Sources */,
+				A45985800797F52200EA14D8 /* TCSAppComponent.m in Sources */,
+				A42E7710079D411100B067BD /* TCSTomcatManagerResponseDelegate.m in Sources */,
+				A4F133F107A1301900D62EC6 /* TCSServerInfoResponseDelegate.m in Sources */,
+				A4F133F507A1303E00D62EC6 /* TCSConnectorsInfoResponseDelegate.m in Sources */,
+				A4F133F907A1306200D62EC6 /* TCSHostsInfoResponseDelegate.m in Sources */,
+				A4F133FD07A1308200D62EC6 /* TCSApplicationsInfoResponseDelegate.m in Sources */,
+				A4F1340107A1309A00D62EC6 /* TCSApplicationStartResponseDelegate.m in Sources */,
+				A4F1340507A130D900D62EC6 /* TCSApplicationStopResponseDelegate.m in Sources */,
+				A4F1340907A130F800D62EC6 /* TCSApplicationReloadResponseDelegate.m in Sources */,
+				A4F1340D07A1311200D62EC6 /* TCSApplicationDeployResponseDelegate.m in Sources */,
+				A4F1341107A1312800D62EC6 /* TCSApplicationUndeployResponseDelegate.m in Sources */,
+				A47E167A07B041A100CBFDAF /* TCSTomcatManagerAuthController.m in Sources */,
+				A4FD413F07DA572100E5614C /* TCSComponentOutlineViewColumn.m in Sources */,
+				A4604D6708129C6A007168DA /* TCSServerStatusResponseDelegate.m in Sources */,
+				A4604D890812A270007168DA /* TCSApplicationsStatusResponseDelegate.m in Sources */,
+				A4A53BA8081D12FB000057B9 /* TCSPrefsToolbarDelegate.m in Sources */,
+				A4A713F00824202000DECC27 /* TCSInstallerController.m in Sources */,
+				A470207B083B688800916A23 /* TCSStartupItemManager.m in Sources */,
+				A4E10843083E93F700A4D771 /* TCSProcess.m in Sources */,
+				A43D378F0860E0AE00B32AD3 /* TCSTomcatManagerDeployController.m in Sources */,
+				A46FBF9308716CC3008C279A /* TCSAuthorizationHandler.m in Sources */,
+				A4374B4F0872BD800026C5EE /* TCSCatSpanker.m in Sources */,
+				A4374B510872BD800026C5EE /* TCSUserShell.m in Sources */,
+				A4B220A808B3E7C00023D6DE /* TCSLayoutManager.m in Sources */,
+				A4C930BF08B9F18F00AE53D5 /* NSArrayController+TCSUtils.m in Sources */,
+				A4059BE50910F49B0032CC10 /* TCSKittyArrayController.m in Sources */,
+				A4CF3CB3091974E9001BB25C /* NSApplication+Scripting.m in Sources */,
+				A48595290955D4BC008565A7 /* TCSLaunchDaemonManager.m in Sources */,
+				A4E69B2D099E784E009F930F /* TCSKittyPermissionsUtility.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A4D8A1A5091AD25000ADD928 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CatSlapperWidgetPlugin;
+			targetProxy = A4D8A1A4091AD25000ADD928 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A4168D54074244EE0016667B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A4168D55074244EE0016667B /* English */,
+			);
+			name = InfoPlist.strings;
+			path = Interface;
+			sourceTree = "<group>";
+		};
+		A4168D56074244EE0016667B /* MainMenu.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A4168D57074244EE0016667B /* English */,
+			);
+			name = MainMenu.nib;
+			sourceTree = "<group>";
+		};
+		A4168DEB074249420016667B /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A4168DEC074249420016667B /* English */,
+			);
+			name = Localizable.strings;
+			path = Interface;
+			sourceTree = "<group>";
+		};
+		A43D3798086199C800B32AD3 /* Deployer.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A43D3799086199C800B32AD3 /* English */,
+			);
+			name = Deployer.nib;
+			sourceTree = "<group>";
+		};
+		A47D171E07778EA800A1B851 /* ServerErrors.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A47D171F07778EA800A1B851 /* English */,
+			);
+			name = ServerErrors.nib;
+			sourceTree = "<group>";
+		};
+		A47E167407B0415E00CBFDAF /* Authorize.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A47E167507B0415E00CBFDAF /* English */,
+			);
+			name = Authorize.nib;
+			sourceTree = "<group>";
+		};
+		A48704D50746599D00DEBEED /* Installer.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A48704D60746599D00DEBEED /* English */,
+			);
+			name = Installer.nib;
+			sourceTree = "<group>";
+		};
+		A48704D70746599D00DEBEED /* Preferences.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A48704D80746599D00DEBEED /* English */,
+			);
+			name = Preferences.nib;
+			sourceTree = "<group>";
+		};
+		A4EA0A3F09DCA40900AC4CF0 /* Acknowledgements.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A4EA0A4009DCA40900AC4CF0 /* English */,
+			);
+			name = Acknowledgements.rtf;
+			sourceTree = "<group>";
+		};
+		A4EA0A5C09DCA40A00AC4CF0 /* CatSlapperHelp.tmproj */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A4EA0A5D09DCA40A00AC4CF0 /* English */,
+			);
+			name = CatSlapperHelp.tmproj;
+			sourceTree = "<group>";
+		};
+		A4EA0A6509DCA40A00AC4CF0 /* License.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A4EA0A6609DCA40A00AC4CF0 /* English */,
+			);
+			name = License.rtf;
+			sourceTree = "<group>";
+		};
+		A4EA0A6709DCA40A00AC4CF0 /* ReadMe.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A4EA0A6809DCA40A00AC4CF0 /* English */,
+			);
+			name = ReadMe.rtf;
+			sourceTree = "<group>";
+		};
+		A4EA0A6909DCA40A00AC4CF0 /* Release Notes.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A4EA0A6A09DCA40A00AC4CF0 /* English */,
+			);
+			name = "Release Notes.rtf";
+			sourceTree = "<group>";
+		};
+		A4EA0A6B09DCA40A00AC4CF0 /* RUNNING.txt */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A4EA0A6C09DCA40A00AC4CF0 /* English */,
+			);
+			name = RUNNING.txt;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A47D1CB909C7439500C27434 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = "${SRCROOT}/Frameworks/**";
+				GCC_C_LANGUAGE_STANDARD = "compiler-default";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Source/TomcatSlapper_Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"LOG_LEVEL=LOG_DEBUG",
+					DEBUG,
+					"DEMO_PERIOD=(30*24*60*60)",
+				);
+				INFOPLIST_FILE = $PROJECT_DIR/Resources/Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = (
+					"$(SRCROOT)/Frameworks/**",
+					"$(SRCROOT)/Frameworks",
+				);
+				OTHER_CFLAGS = "";
+				OTHER_CPLUSPLUSFLAGS = "$(OTHER_CFLAGS)";
+				PREBINDING = NO;
+				PRODUCT_NAME = CatSlapper;
+				WRAPPER_EXTENSION = app;
+				ZERO_LINK = YES;
+			};
+			name = Debug;
+		};
+		A47D1CBA09C7439500C27434 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				DEPLOYMENT_LOCATION = NO;
+				DEPLOYMENT_POSTPROCESSING = YES;
+				FRAMEWORK_SEARCH_PATHS = "${SRCROOT}/Frameworks/**";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Source/TomcatSlapper_Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"LOG_LEVEL=LOG_ERROR",
+					"DEMO_PERIOD=(30*24*60*60)",
+				);
+				INFOPLIST_FILE = $PROJECT_DIR/Resources/Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = (
+					"$(SRCROOT)/Frameworks/**",
+					"$(SRCROOT)/Frameworks",
+				);
+				OTHER_CFLAGS = "";
+				OTHER_CPLUSPLUSFLAGS = "$(OTHER_CFLAGS)";
+				PREBINDING = NO;
+				PRODUCT_NAME = CatSlapper;
+				STRIP_INSTALLED_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		A47D1CBB09C7439500C27434 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "${NATIVE_ARCH}";
+				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				SDKROOT = "";
+			};
+			name = Debug;
+		};
+		A47D1CBC09C7439500C27434 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					ppc,
+					i386,
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				SDKROOT = "";
+			};
+			name = Release;
+		};
+		A4DFDD9C08DC9BCD00DD149C /* Beta */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				DEPLOYMENT_POSTPROCESSING = YES;
+				FRAMEWORK_SEARCH_PATHS = "${SRCROOT}/Frameworks/**";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Source/TomcatSlapper_Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(GCC_PREPROCESSOR_DEFINITIONS_QUOTED_1)",
+					"LOG_LEVEL=LOG_INFO",
+					"DEMO_PERIOD=(30*24*60*60)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS_QUOTED_1 = "BXPRY=@\\\"September\\ 15th,\\ 2006\\ at\\ midnight\\\"";
+				INFOPLIST_FILE = $PROJECT_DIR/Resources/Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = (
+					"$(SRCROOT)/Frameworks/**",
+					"$(SRCROOT)/Frameworks",
+				);
+				OTHER_CFLAGS = "";
+				OTHER_CPLUSPLUSFLAGS = "$(OTHER_CFLAGS)";
+				PREBINDING = NO;
+				PRODUCT_NAME = CatSlapper;
+				STRIP_INSTALLED_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Beta;
+		};
+		A4DFDD9D08DC9BCD00DD149C /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = "${SRCROOT}/Frameworks/**";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Source/TomcatSlapper_Prefix.pch;
+				INFOPLIST_FILE = $PROJECT_DIR/Resources/Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = (
+					"$(SRCROOT)/Frameworks/**",
+					"$(SRCROOT)/Frameworks",
+				);
+				OTHER_CFLAGS = "";
+				OTHER_CPLUSPLUSFLAGS = "$(OTHER_CFLAGS)";
+				PREBINDING = NO;
+				PRODUCT_NAME = CatSlapper;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Default;
+		};
+		A4DFDDA108DC9BCD00DD149C /* Beta */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					ppc,
+					i386,
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				SDKROOT = "";
+			};
+			name = Beta;
+		};
+		A4DFDDA208DC9BCD00DD149C /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					"${NATIVE_ARCH}",
+					ppc,
+					i386,
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				SDKROOT = "";
+			};
+			name = Default;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A4DFDD9908DC9BCD00DD149C /* Build configuration list for PBXNativeTarget "TomcatSlapper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A47D1CB909C7439500C27434 /* Debug */,
+				A47D1CBA09C7439500C27434 /* Release */,
+				A4DFDD9C08DC9BCD00DD149C /* Beta */,
+				A4DFDD9D08DC9BCD00DD149C /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+		A4DFDD9E08DC9BCD00DD149C /* Build configuration list for PBXProject "TomcatSlapper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A47D1CBB09C7439500C27434 /* Debug */,
+				A47D1CBC09C7439500C27434 /* Release */,
+				A4DFDDA108DC9BCD00DD149C /* Beta */,
+				A4DFDDA208DC9BCD00DD149C /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}

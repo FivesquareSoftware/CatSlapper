@@ -1,0 +1,111 @@
+<html>
+
+<head>
+<?php 
+$topic_name="Launching Tomcat Instances at Startup or Login";
+include("Include/head.inc.php"); 
+?>
+</head>
+
+<body>
+<?php include("Include/topnav.inc.php") ?>	
+	<div class="clear">&nbsp;</div>
+	
+	<div id="content">
+		<a name="CatSlapper_LaunchDaemons"></a>
+		<p class="topicHeading">Launching Tomcat Instances at Startup or Login</p>
+		<p>
+		CatSlapper can help you interface with launchd, Apple's new replacement for
+		StartupItems, to create a variety of startup events for your Tomcat instances.
+		See 'man launchd' for more information about launchd.
+		</p>
+		<p>
+		There are two kinds of startup events currently supported: system boot and 
+		user login.  The first are referred to as LaunchDaemons, while the second
+		are called LaunchAgents. Additionally, you can run a Tomcat started at system 
+		boot as either your own user or the privileged user (root). LaunchAgents
+		always run as your user.
+		</p>
+
+		<div class="taskBox">
+			<p class="taskDirection">
+			To enable or disable a startup event for a Tomcat Instance:
+			</p>
+			<p>
+			Select your desired event from the "Startup Automatically" dropdown.
+			</p>
+		</div>
+
+		<p class="taskHeading">
+		ACLs are Required to use LaunchDaemons
+		</p>
+		
+		<a name="CatSlapper_ACLs"></a>
+		<p>
+		In order to enable LaunchDaemons, you must be able to write to /Library/LaunchDaemons
+		as an administrator. To facilitate this, and so you are not asked
+		for your administrator's password each time there is a change to a LaunchDaemon
+		(which can be frequent because changes in the Tomcat configuration must be written
+		back to the LaunchDaemon configuration), CatSlapper uses Access Control Lists (ACLs). 
+		</p>
+		<p>
+		ACLs are a new feature in Mac OS X Tiger, but they are not enabled by default.
+		So, the first time you select "When System Starts" from the automatic startup 
+		dropdown, CatSlapper checks if you have enabled ACLs, and if not, asks 
+		you to let it do so. You can choose not to let CatSlapper do this, but you 
+		will not be able to enable a LaunchDaemon from within CatSlapper after this 
+		point.
+		</p>
+		<p>
+		If you change your mind later, you can edit CatSlapper's preferences to let 
+		it enable ACLs. Additionally, unless you've told it not to, CatSlapper will 
+		keep asking you to enable ACLs if it sees that they're necssary.
+		</p>
+		
+		<div class="taskBox">
+			<p class="taskDirection">
+			To enable ACLs from CatSlapper's preferences:
+			</p>
+			<p>
+			Check "OK to use Access Control lists" in CatSlapper's General preferce pane.
+			</p>
+		</div>
+		
+		<p>
+		If you do grant CatSlapper permission to use ACLs, it will enable them for your 
+		root volume if need be, and add an ACL entry to /Library/LaunchDaemons allowing 
+		just your user to write and delete. You could simulate these two operations
+		by executing roughly the following two commands in Terminal:<br/>
+		<pre>
+	[Your-Computer] % sudo fsaclctl -p / -e
+	[Your-Computer] % sudo chmod +a "<i>user</i> allow add_file,delete_child" LaunchDaemons
+		</pre>
+		where <i>user</i> is replaced with your user name.
+		</p>
+		<p>
+		It is important to understand that there are security implications to adding 
+		this rule: if someone were to gain access to your machine as your user they
+		could enable a malicious LaunchDaemon without your knowledge. Of course, if
+		someone actually did gain this access, there are few limits to what else they 
+		could do, so, adding this rule does not inherently make your machine less
+		secure.  The lesson: guard your administrator's account carefully.
+		</p>
+
+		<p>Detailed technical documentation on ACLs is available from 
+		<a href="http://developer.apple.com/documentation/Security/Conceptual/Security_Overview/Concepts/chapter_3_section_9.html#//apple_ref/doc/uid/TP30000976-CH203-CHDJJGBF">
+		Apple's Developer Web site
+		</a>.
+		</p>
+		
+				
+		<div style="height:5em">&nbsp;</div>
+
+	</div>
+<?php 
+$node="1";
+include("Include/leftnav.inc.php"); 
+?>
+</body>
+
+</html>
+

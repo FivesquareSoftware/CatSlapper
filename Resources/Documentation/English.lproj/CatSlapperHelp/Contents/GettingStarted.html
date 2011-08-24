@@ -1,0 +1,60 @@
+<html>
+
+<head>
+<?php 
+$topic_name="Getting Started";
+include("Include/head.inc.php"); 
+?>
+</head>
+
+<body>
+<?php include("Include/topnav.inc.php") ?>	
+	<div class="clear">&nbsp;</div>
+	
+	<div id="content">
+		<p class="topicHeading">Getting Started</p>
+		<p>
+		If you don't have any Tomcats installed (or running) when you first launch CatSlapper you'll be greeted 
+		by the main controller window displaying a blank configuration. You can get going several ways.
+		</p>
+
+		<p class="taskHeading">
+		Install an instance of Tomcat
+		</p>
+		<div class="taskBox">
+			<p>Click "Action" from the main menu and select "Install", or click the "Install" 
+			toolbar icon</p>
+					</div>
+		<p>
+		This will place Tomcat files on your system and insert the configuration into CatSlapper's
+		management database.
+		See <a href="InstallingTomcat.html">Installing A Tomcat Instance</a> for more information.
+		</p>
+		
+		<p class="taskHeading">
+		Manually enter configuration information
+		</p>
+		<div class="taskBox">
+			<p>Click "Action" from the main menu and select "Add", or click the "Add" 
+			toolbar icon.</p>
+			<p>Enter the name you wish to give this configuration.</p>
+			<p>Accept the System default for JAVA_HOME or enter the path to a valid JDK.</p>
+			<p>Enter a value for CATALINA_HOME that points to a valid Tomcat installation.</p>
+			<p>Enter optional values as you wish.</p>
+					</div>
+		<p>
+		You can read more about Tomcat configuration on the 
+<?php include("Include/tomcat_website.inc.html") ?>.
+		</p>
+
+		<div style="height:5em">&nbsp;</div>
+
+	</div>
+<?php 
+$node="1";
+include("Include/leftnav.inc.php"); 
+?> 
+</body>
+
+</html>
+

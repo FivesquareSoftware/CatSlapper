@@ -1,0 +1,104 @@
+
+//CONTROLLER
+
+TCSController.registeredThankYouMessage = "Thank you for buying a CatSlapper registration code!";
+TCSController.demoTimeRemainingMessage = "This demo will expire in %d %@";
+TCSController.betaExpirationDateMessage = "Beta %@ expires on %@";
+TCSController.demoExpiredMessage = "This demo has expired";
+
+TCSController.unsupportedOSMessage = "Unsupported Version of Mac OS X";
+TCSController.unsupportedOSInfo = "Cat Slapper requires Mac OS X 10.4 Tiger to run";
+
+TCSController.betaMessage = "This is a Public Beta of Cat Slapper";
+TCSController.betaInfo = "Use it at your own risk. Never, ever use it to control mission critical systems or systems where data loss would be unacceptable.  We love your feedback: talkback@fivesquaresoftware.com. \n\nThis Beta will expire on %@";
+
+TCSController.betaExpiredMessage = "This Cat Slapper Beta Has Expired";
+TCSController.betaExpiredInfo = "Please visit fivesquaresoftware.com to get the latest release.";
+
+TCSController.shutdownNotAuthorizedMessage = "Failed Authorization";
+TCSController.shutdownNotAuthorizedInfo = "Cat Slapper requires administrator priviledges to run. Restart Cat Slapper and enter the credentials for an administrator of this machine.";
+
+TCSController.invalidRegistrationCodeMessage = "The registration code you entered was not valid.";
+TCSController.invalidRegistrationCodeInfo = "Make sure you've entered the registration code exactly as you received it and try again.";
+
+TCSController.latestVersionMessage = "Your version of CatSlapper is up to date.";
+TCSController.latestVersionInfo = "";
+
+TCSController.cantUseSystemDaemonsMessage = "ACLs must be enabled to add, edit, disable or remove system daemons.";
+TCSController.cantUseSystemDaemonsInfo = "Check \"OK To Install Access Control Lists\" in CatSlapper preferences if you want to start Tomcat at system boot.";
+
+TCSController.enablingACLsFailedMessage = "CatSlapper could not enable Access Control Lists";
+TCSController.enablingACLsFailedInfo = "Please make sure you correctly entered an Administrator's user name and password and try again.";
+
+TCSController.syncingLaunchDaemonsFailedMessage = "CatSlapper could not synchronize one or more of your launchd jobs";
+TCSController.syncingLaunchDaemonsFailedInfo = "They may not reflect the state of your current Tomcats. If this problem persists, please contact Fivesquare Software.";
+
+TCSController.repairingPermissionsFailedMessage = "CatSlapper could not repair the permissions for one or more of your Tomcats.";
+TCSController.repairingPermissionsFailedInfo = "If this problem persists, please contact Fivesquare Software.";
+
+// AUTHORIZATION
+
+TCSAuthorizationController.authorizationWarningMessage = "Authorization Failure";
+TCSAuthorizationController.authorizationWarningInfo = "Cat Slapper was unable to obtain the proper authorization to perform this operation (%d) \n\nPlease try again or restart Cat Slapper.";
+
+
+// PROCESS
+
+TCSProcess.uptime = "%d day%@,%02d:%02d:%02d";
+
+// KITTY
+
+TCSKitty.statusText.running = "Running(pid:%d;uptime:%@)";
+TCSKitty.statusText.stopped = "Stopped";
+
+TCSKitty.validationMessage.hasErrors = "This server configuration may behave erratically or be inoperable.";
+
+TCSKitty.validationMessage.duplicates.summary = "There are multiple Tomcat instances attempting to use the same configuration file. %@";
+TCSKitty.validationMessage.duplicates.explanation = "When an attempt is made to start a second Tomcat instance using the same server.xml configuration file, the second instance won't run.  This is because it can't bind to the same port as the running instance.  Whichever one is started first wins. Specify a different CATALINA_BASE (or CATALINA_HOME if you leave CATALINA_BASE blank) for each server.";
+
+TCSKitty.validationMessage.noCatHome.summary = "CATALINA_HOME must be set or Tomcat won't start.";
+TCSKitty.validationMessage.noCatHome.explanation = "CATALINA_HOME tells Tomcat where the files and directories are that it needs to run. See the Tomcat documentation under the Help menu for more information.";
+
+TCSKitty.validationMessage.catHomeNotValidCatHome.summary = "CATALINA_HOME must contain a valid Tomcat installation (%@).";
+TCSKitty.validationMessage.catHomeNotValidCatHome.explanation = "CATALINA_HOME must contain at minimum /bin, /common and /server and their children in order for Tomcat to start.  If CATALINA_BASE is not specified, it must also contain the necessary CATALINA_BASE files. Without these, Tomcat doesn't exist. If you haven't installed Tomcat yet you can run Cat Slapper's built in installer or install an instance in this location yourself. See the Tomcat documentation under the Help menu for more information.";
+
+TCSKitty.validationMessage.catBaseNotDir.summary = "If defined, CATALINA_BASE must contain the a unique server configuration and other files. (%@).";
+TCSKitty.validationMessage.catBaseNotDir.explanation = "CATALINA_BASE is used to set up Tomcat instances that share the same binaries, but use different configuration files. If this is not set, it defaults to CATALINA_HOME.  If it is set, it must contain conf/server.xml. See the Tomcat documentation under the Help menu for more information.";
+
+TCSKitty.validationMessage.javaHomeNotDir.summary = "JAVA_HOME must exist and contain a Java installation. (%@).";
+TCSKitty.validationMessage.javaHomeNotDir.explanation = "JAVA_HOME is used by Tomcat to know which version of Java to run under.  This must be set to a location where Java is installed.  Mac OS X Java installations are under /System/Library/Frameworks/JavaVM.framework.  The default installation is resolved via the links /Library/Java/Home and /System/Library/Frameworks/JavaVM.framework/Versions/Current and CurrentJDK.";
+
+TCSKitty.validationMessage.noDefaultHttpPort.summary = "There does not appear to be an HTTP Connector configured for this server.";
+TCSKitty.validationMessage.noDefaultHttpPort.explanation = "Without at least one HTTP Connector configured in server.xml for a Tomcat, there is no way to dynamically check the state of server components using the Tomcat Manager application.  Configure a default connector using the <Connector> element inside a <Service> element.";
+
+
+
+// COMPONENTS
+
+TCSComponent.noStatusText = "Unknown";
+TCSComponent.noComponentInfo = "No component information";
+TCSComponent.noComponentStatus = "No status information";
+
+// INSTALLER
+
+TCSInstallerController.installFailed = "Installation failed";
+
+// MANAGER
+
+
+TCSTomcatManagerAuthController.userMessage = "Cat Slapper is attempting to retrieve component information for %@ from area \"%@\" on %@:%d, and needs you to authenticate.";
+TCSTomcatManagerAuthController.disableMessage = "Do you want to disable further automatic Tomcat Manager requests?";
+TCSTomcatManagerAuthController.helpMessage = "You can read more about what this means in Cat Slapper help.";
+
+
+TCSTomcatManagerProxy.statusMsg.startingComponentUpdate = "Requesting component information";
+TCSTomcatManagerProxy.statusMsg.updateComplete = "Last update sucessful";
+TCSTomcatManagerProxy.statusMsg.startingApplicationStart = "Starting application at path: %@";
+TCSTomcatManagerProxy.statusMsg.startingApplicationStop = "Stopping application at path: %@";
+TCSTomcatManagerProxy.statusMsg.startingApplicationReload = "Reloading application at path: %@";
+TCSTomcatManagerProxy.statusMsg.startingApplicationDeploy = "Deploying application at path: %@";
+TCSTomcatManagerProxy.statusMsg.startingApplicationUndeploy = "Undeploying application at path: %@";
+TCSTomcatManagerProxy.statusMsg.requesting = "Requesting %@";
+TCSTomcatManagerProxy.statusMsg.requestCanceled = "Request canceled";
+TCSTomcatManagerProxy.statusMsg.requestFailed = "Request failed";
+

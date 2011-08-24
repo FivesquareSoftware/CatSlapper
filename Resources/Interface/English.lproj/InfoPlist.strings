@@ -1,0 +1,4 @@
+﻿/* Localized versions of Info.plist keys */
+
+CFBundleName = "CatSlapper";
+NSHumanReadableCopyright = "Copyright © 2005 Fivesquare Software\nAll Rights Reserved.";

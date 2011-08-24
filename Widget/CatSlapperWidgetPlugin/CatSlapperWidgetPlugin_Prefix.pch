@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'CatSlapperWidgetPlugin' target in the 'CatSlapperWidgetPlugin' project.
+//
+
+#ifdef __OBJC__
+    #import <Cocoa/Cocoa.h>
+#endif

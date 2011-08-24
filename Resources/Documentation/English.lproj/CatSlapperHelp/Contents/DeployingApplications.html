@@ -1,0 +1,68 @@
+<html>
+
+<head>
+<?php 
+$topic_name="Deploying Applications";
+include("Include/head.inc.php"); 
+?>
+</head>
+
+<body>
+<?php include("Include/topnav.inc.php") ?>	
+	<div class="clear">&nbsp;</div>
+	
+	<div id="content">
+	<a name="CatSlapper_Deploy"></a>
+		<p class="topicHeading">Deploying Applications</p>
+		<p>
+		The Tomcat Manager application is capable of deploying Web applications to a particular
+		host configured on a Tomcat instance. It can do this by either deploying an application
+		residing on the same machine as itself, or by receiving a WAR file in an upload along with
+		the command to deploy.
+		</p>
+		<p>
+		To start the deployment process, select "Deploy webapp" from the commands popop menu
+		for a host component.
+		</p>
+        <div class="taskBox">
+            <p class="taskDirection">
+            To deploy a webapp located on the server:
+            </p>
+            <p>
+            Optionally enter a value for context path.
+            </p>
+            <p>
+            Optionally enter a URL of the form file://path/to/file for an XML configuration
+            file for this application.
+            </p>
+            <p>
+            Enter a file URL for the application directory or WAR file you wish to deploy.
+            </p>
+            <p>
+            Click "Deploy".
+            </p>
+        </div>		
+        <div class="taskBox">
+            <p class="taskDirection">
+            To deploy a webapp by uploading a WAR file:
+            </p>
+            <p>
+            Click "Select" and browse to the WAR file you wish to upload.
+            </p>
+            <p>
+            Click "Deploy" (This may take a while).
+            </p>
+        </div>		
+		<div style="height:5em">&nbsp;</div>
+
+	</div>
+<?php 
+$node="1";
+$sub_node="8";
+$sub_sub_node="5";
+include("Include/leftnav.inc.php"); 
+?>
+</body>
+
+</html>
+

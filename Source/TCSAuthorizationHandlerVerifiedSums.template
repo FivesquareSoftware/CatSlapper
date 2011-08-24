@@ -1,0 +1,13 @@
+/*
+ *  TCSAuthorizationHandlerVerifiedSums.h
+ *  TomcatSlapper
+ *
+ *  Created by John Clayton on 7/6/05.
+ *  Copyright 2005 Fivesquare Software, LLC. All rights reserved.
+ *
+ */
+
+#define INSTALLER_MD5_SUM "_INSTALLER_MD5_SUM_"
+#define ENABLE_STARTUP_ITEM_MD5_SUM "_ENABLE_STARTUP_ITEM_MD5_SUM_"
+#define DISABLE_STARTUP_ITEM_MD5_SUM "_DISABLE_STARTUP_ITEM_MD5_SUM_"
+#define SLAPPER_MD5_SUM "_SLAPPER_MD5_SUM_"

@@ -1,0 +1,46 @@
+<html>
+
+<head>
+<?php 
+$topic_name="Tomcat Won't Start";
+include("Include/head.inc.php"); 
+?>
+</head>
+
+<body>
+<?php include("Include/topnav.inc.php") ?>	
+	<div class="clear">&nbsp;</div>
+	
+	<div id="content">
+		<p class="topicHeading">Tomcat Won't Start</p>
+		<p>
+		By far the biggest problem that arises when first trying out Tomcat is that it won't start.
+		There are really only a few reasons why this could be.
+		</p>
+		<ul>		
+			<li>Required environment variables are not set&mdash;make sure JAVA_HOME and CATALINA_HOME are
+			set in your environment if you are starting Tomcat from a shell.  If you are using CatSlapper
+			this is taken care of for you, so as long as you don't see any configuration errors in
+			the main controller window in the "Server" tab, this isn't the problem.</li>
+			<li>The ports Tomcat's connectors are trying to listen on are already in use&mdash;have a look
+			in $CATALINA_HOME/conf/server.xml and look for the ports being used by the http and ajp connectors.
+			Make sure they don't conflict with any ports other services are using on your machine.</li>
+			<li>You are using an unsupported JDK&mdash;different versions of Tomcat support different
+			versions of the JDK.  Make sure you are using the correct JDK for a particular version of Tomcat.</li>
+		</ul>
+		<p>
+		More information about what's going wrong is always available in Tomcat's logs.  CatSlapper 
+		displays the output from the server instance in its console view.  You can always look at the logs
+		in $CATALINA_HOME/logs.
+		</p>
+		<div style="height:5em">&nbsp;</div>
+
+	</div>
+<?php 
+$node="2";
+include("Include/leftnav.inc.php"); 
+?>
+</body>
+
+</html>
+

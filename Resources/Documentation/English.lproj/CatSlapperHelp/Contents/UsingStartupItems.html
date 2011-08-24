@@ -1,0 +1,44 @@
+<html>
+
+<head>
+<?php 
+$topic_name="Launching Tomcat Instances at Startup";
+include("Include/head.inc.php"); 
+?>
+</head>
+
+<body>
+<?php include("Include/topnav.inc.php") ?>	
+	<div class="clear">&nbsp;</div>
+	
+	<div id="content">
+		<p class="topicHeading">Launching Tomcat Instances at Startup</p>
+		<p>
+		CatSlapper can install a StartupItem, a script that causes Mac OS X to launch a server or other process
+		when the system starts, for any instance of Tomcat it is managing.
+		</p>
+		<p>
+		StartupItems are located inside /Library/StartupItems.  You should not manually edit the StartupItems that
+		CatSlapper creates, as your changes wil be overwritten.  CatSlapper tries to synchronize StartupItems
+		when it launches.
+		</p>
+		<div class="taskBox">
+			<p class="taskDirection">
+			To enable or disable a StartupItem for a Tomcat Instance:
+			</p>
+			<p>
+			Check or uncheck the "Enable StartupItem" checkbox.
+			</p>
+		</div>
+		
+		<div style="height:5em">&nbsp;</div>
+
+	</div>
+<?php 
+$node="1";
+include("Include/leftnav.inc.php"); 
+?>
+</body>
+
+</html>
+

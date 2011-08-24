@@ -1,0 +1,56 @@
+<html>
+
+<head>
+<?php 
+$topic_name="Installing A Tomcat Instance";
+include("Include/head.inc.php"); 
+?>
+</head>
+
+<body>
+<?php include("Include/topnav.inc.php") ?>	
+	<div class="clear">&nbsp;</div>
+	
+	<div id="content">
+	<a name="CatSlapper_Installer"></a>
+		<p class="topicHeading">Installing A Tomcat Instance</p>
+		<p>
+		CatSlapper simplifies the installation of Tomcat instances.  It can currently install Tomcat 5.0.28, while
+		configuring the minimal settings that are needed to run a Tomcat instance for you.
+		</p>
+		<div class="taskBox">
+			<ol>
+				<li>Select Action > Install from the main menu or click on "Install" in the toolbar.</li>
+				<li>Provide at least a name, and values for JAVA_HOME and CATALINA_HOME (these are required
+				by Tomcat to start).</li>
+				<li>Click the "Install" button (or further configure Tomcat as noted below).</li>
+			</ol>
+		</div>
+		<p>
+		At this point you will have installed a minimally configured Tomcat instance. If
+		you want to further customize this instance of Tomcat, do some or all of the following 
+		before you click "Install".
+		</p>
+		<div class="taskBox">
+			<ol>
+				<li>Enter values for which ports you want this instance of Tomcat to listen on for
+				HTTP requests, and requests from Web server connectors (like mod_jk) that use the AJP protocol.
+				The existing values are the defaults that Tomcat uses.  Only one instance of Tomcat can listen
+				on a given port at a time, so make sure these values don't conflict with other Tomcats.</li>
+				<li>Enable or disable a StartupItem for this Tomcat instance as you wish.</li>
+				<li>If you know how to use CATALINA_BASE and CATALINA_OPTS, enter your desired values.</li>
+				<li>Click the "Install" button.</li>
+			</ol>
+		</div>
+		
+		<div style="height:5em">&nbsp;</div>
+
+	</div>
+<?php 
+$node="1";
+include("Include/leftnav.inc.php"); 
+?>
+</body>
+
+</html>
+

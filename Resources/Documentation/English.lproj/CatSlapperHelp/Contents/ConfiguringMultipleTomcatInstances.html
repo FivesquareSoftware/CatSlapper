@@ -1,0 +1,74 @@
+<html>
+
+<head>
+<?php 
+$topic_name="Configuring Multiple Tomcat Instances";
+include("Include/head.inc.php"); 
+?>
+</head>
+
+<body>
+<?php include("Include/topnav.inc.php") ?>	
+	<div class="clear">&nbsp;</div>
+	
+	<div id="content">
+		<p class="topicHeading">Configuring Multiple Tomcat Instances</p>
+		<p>
+		It is possible to have multiple instance of multiple versions of Tomcat running on a single Mac OS X machine.
+		This is often necessary when developing Java Web applications for deployment to various servers and target JDKs.
+		CatSlapper makes it simple by capturing the necessary information to uniquely control an instance of Tomcat 
+		in each configuration you create. 
+		</p>
+		<p>
+		The factors that make an instance of Tomcat unique from other instances are as follows:
+		</p>
+		<div class="taskBox">
+			<ul>
+				<li>The value of the environment variable CATALINA_HOME. This indicates where the Tomcat binaries
+				are installed.</li>
+				<li>If two instances share the same value for CATALINA_HOME, the the value of CATALINA_BASE 
+				can differentiate them. CATALINA_BASE indicates where resources for a running instance are stored, 
+				such as logs, libraries and deployed Web applications.  When CATALINA_BASE is different from
+				CATALINA_HOME, Tomcat binaries are loaded from CATALINA_HOME and can be shared. If CATALINA_BASE
+				is not set it defaults to the value of CATALINA_HOME.</li>
+			</ul>
+					</div>
+
+		<p>
+		As long as these environmental conditions are met, an instance of Tomcat can be uniquely controlled.  
+		This is true whether you are using CatSlapper to manage your Tomcats or not.  CatSlapper can make 
+		it easier to correctly configure your Tomcats by warning you of conflicts or misconfigurations that 
+		may cause unexpected results when stopping, starting or performing other management tasks on a Tomcat 
+		instance.
+		</p>
+		<div class="taskBox">
+			<p>Click the grey information button that appears next to the read text "Configuration Errors"
+			to see why a Tomcat instance does not validate.
+			</p>
+					</div>
+		<p>
+		While not strictly part of a unique Tomcat instance configuration, setting up which ports Tomcat
+		listens on for requests over various protocols (such as HTTP or AJP), is crucially important. This
+		is because only one Tomcat can listen on a given port at any one time. Currently, CatSlapper
+		does not manage these port settings for you, except when you use it to install a Tomcat instance 
+		in the first place.  <!-- It will, however, warn you when a port conflict exists. -->
+		</p>
+		<p>
+		Connector port settings settings are managed in the server.xml file for each installation of Tomcat.  
+		You can read more about it on the 
+<?php include("Include/tomcat_website.inc.html") ?>.
+		If you have Tomcat running in CatSlapper already, you can also click "Help" in the main menu and select
+		"Local Tomcat Documentation" to read the Tomcat documentation installed on your machine.  
+		</p>
+		
+		<div style="height:5em">&nbsp;</div>
+
+	</div>
+<?php 
+$node="1";
+include("Include/leftnav.inc.php"); 
+?>
+</body>
+
+</html>
+

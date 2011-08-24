@@ -1,0 +1,55 @@
+<html>
+
+<head>
+<?php 
+$topic_name="Managing Tomcat Components";
+include("Include/head.inc.php"); 
+?>
+</head>
+
+<body>
+<?php include("Include/topnav.inc.php") ?>	
+	<div class="clear">&nbsp;</div>
+	
+	<div id="content">
+	<a name="CatSlapper_TomcatManager"></a>
+		<p class="topicHeading">Managing Tomcat Components</p>
+		<p>
+		Tomcat ships with some default Web applications, among these the "Manager" application.  Tomcat Manager
+		allows administrators to perform management tasks on Tomcat components and gather 
+		information about deployed Web applications, the system and Tomcat itself using a Web browser.
+		</p>
+		<p>
+		In order to simplfy the use of the Tomcat Manager application and consolidate its core capabilities
+		into a single interface, CatSlapper utilizes a number of Tomcat Manager's programmatic
+		interfaces, including its 
+		<a href="http://java.sun.com/products/JavaManagement/" target="_blank">JMX (Java Management Extensions)</a> 
+		proxy servlet, which uses JMX beans to gather information about and control various components 
+		within Tomcat. CatSlapper displays this component information and provides controls for common tasks
+		you might wish to perform in its "Components" view.
+		</p>
+		<p>
+		Use the links below to get detailed information and instructions on how to use 
+		CatSlapper's "Components" view.
+		</p>
+		<p>
+			<br><a href="AboutTheComponents	Display.html">The "Components" View Display</a>
+			<br><a href="InitiatingManagerCommunication.html">Initiating Communication With Tomcat Manager</a>
+			<br><a href="DetailedComponentInfo.html">Getting Detailed Component Information</a>
+			<br><a href="ControllingComponents.html">Controlling Components</a>
+			<br><a href="DeployingApplications.html">Deploying Applications</a>
+		</p>
+		
+		<div style="height:5em">&nbsp;</div>
+
+	</div>
+<?php 
+$node="1";
+$subnode="8";
+include("Include/leftnav.inc.php"); 
+?>
+
+</body>
+
+</html>
+

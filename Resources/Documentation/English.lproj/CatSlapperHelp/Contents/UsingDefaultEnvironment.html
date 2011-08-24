@@ -1,0 +1,44 @@
+<html>
+
+<head>
+<?php 
+$topic_name="Using the Default Environment";
+include("Include/head.inc.php"); 
+?>
+</head>
+
+<body>
+<?php include("Include/topnav.inc.php") ?>	
+	<div class="clear">&nbsp;</div>
+	
+	<div id="content">
+		<p class="topicHeading">Using the Default Environment</p>
+		<p>
+		When using CatSlapper to control a single instance of Tomcat, it can be very handy to use a set of defaults
+		for Tomcat's required environment varibles. Often, these are set in your shell.  CatSlapper allows you to
+		explicity set default values in a preference pane. You can also choose to have these defaults loaded from
+		your tcsh or bash environment.
+		</p>
+		<div class="taskBox">
+			<ol>
+				<li>Select CatSlapper > Preferences from the main menu.</li>
+				<li>Select the "Defaults" pane.</li>
+				<li>Leave "Load from ${SHELL} environment" checked or uncheck it and enter your desired values
+				in the fields provided.</li>
+			</ol>
+					</div>
+		<p>
+		You can reload default values from your shell any time by clicking the refresh button.
+		</p>
+		
+		<div style="height:5em">&nbsp;</div>
+
+	</div>
+<?php 
+$node="1";
+include("Include/leftnav.inc.php"); 
+?>
+</body>
+
+</html>
+

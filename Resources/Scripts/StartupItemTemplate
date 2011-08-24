@@ -1,0 +1,53 @@
+#!/bin/sh
+#
+# A script to automatically start up a Tomcat instance on system startup.
+# This file was created and is managed by Cat Slapper, a utility for 
+# managing a stable of Tomcats. If you edit it by hand, there is no 
+# guarantee your changes won't be lost or that this script will continue 
+# to work.
+#
+# www.fivesquaresoftware.com/catslapper
+#
+
+if [ -z $1 ] ; then
+	echo "Usage: $0 [start|stop|restart] "
+	exit 1
+fi
+
+# Source the common setup functions for startup scripts
+test -r /etc/rc.common || exit 1
+. /etc/rc.common
+
+export JAVA_HOME="{JAVA_HOME}"
+export CATALINA_HOME="{CATALINA_HOME}"
+export CATALINA_BASE="{CATALINA_BASE}"
+export CATALINA_OPTS="{CATALINA_OPTS}"
+export CATALINA_PID="{CATALINA_PID}"
+
+SCRIPT="$CATALINA_HOME/bin/catalina.sh"
+NAME="{REAL_NAME}"
+
+StartService ()
+{
+	ConsoleMessage "Starting $NAME"
+	$SCRIPT start > /dev/null 2>&1
+}
+
+StopService ()
+{
+	ConsoleMessage "Stopping $NAME"
+	$SCRIPT stop > /dev/null 2>&1
+}
+
+RestartService ()
+{
+	ConsoleMessage "Restarting $NAME"
+	$SCRIPT stop > /dev/null 2>&1
+	$SCRIPT start > /dev/null 2>&1
+}
+
+if test -x $SCRIPT ; then
+	RunService "$1"
+else
+	ConsoleMessage "Could not find $NAME startup script!"
+fi

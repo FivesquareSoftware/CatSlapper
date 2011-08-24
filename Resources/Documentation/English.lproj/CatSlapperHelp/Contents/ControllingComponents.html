@@ -1,0 +1,82 @@
+<html>
+
+<head>
+<?php 
+$topic_name="Controlling Components";
+include("Include/head.inc.php"); 
+?>
+</head>
+
+<body>
+<?php include("Include/topnav.inc.php") ?>	
+	<div class="clear">&nbsp;</div>
+	
+	<div id="content">
+		<p class="topicHeading">Controlling Components</p>
+		<p>
+		CatSlapper allows you to send commands to an instance of Tomcat Manager that instruct it to take
+		various actions on Tomcat components. To issue a command for a component, select the command
+		from the popup menu for a component in the "Commands" column.
+		</p>
+
+        <div class="taskBox">			
+            <p class="taskDirection">
+            To start or stop a Tomcat instance:
+            </p>
+            <p>
+            Click the popup "Commands" menu for the root component in the "Components" outline view.
+            </p>
+            <p>
+            Select "Toggle".
+            </p>
+					</div>
+		
+        <div class="taskBox">			
+            <p class="taskDirection">
+            To deploy a Web application to a Tomcat instance:
+            </p>
+            <p>
+            Click the popup "Commands" menu for a host component in the "Components" outline view.
+            </p>
+            <p>
+            Select "Deploy webapp". 
+            </p>
+					</div>
+		
+		<p>
+		There are various ways to deploy webapps.  See 
+		<a href="DeployingApplications.html">Deploying Applications</a> 
+		for more information.
+		</p>
+
+        <div class="taskBox">			
+            <p class="taskDirection">
+            To start, stop, reload or undeploy a webapp:
+            </p>
+            <p>
+            Click the popup "Commands" menu for a Web application component in the "Components" outline view.
+            </p>
+            <p>
+            Select "Start", "Stop", "Reload" or "Undeploy". 
+            </p>
+					</div>
+		
+		<p>
+		Be careful when undeploying Web applications.  This will remove them from the server in most cases. Along
+		with the original WAR file if expansion occurred.
+		</p>
+
+		
+		<div style="height:5em">&nbsp;</div>
+
+	</div>
+<?php 
+$node="1";
+$sub_node="8";
+$sub_sub_node="4";
+include("Include/leftnav.inc.php"); 
+?>
+</body>
+
+</html>
+

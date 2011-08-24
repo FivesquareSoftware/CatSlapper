@@ -1,0 +1,80 @@
+<html>
+
+<head>
+<?php 
+$topic_name="Initiating Communication With Tomcat Manager";
+include("Include/head.inc.php"); 
+?>
+</head>
+
+<body>
+<?php include("Include/topnav.inc.php") ?>	
+	<div class="clear">&nbsp;</div>
+	
+	<div id="content">
+		<p class="topicHeading">Initiating Communication With Tomcat Manager</p>
+        <div class="taskBox">
+			<p>
+            NOTE: All uses of the Tomcat Manager application require that authentication for that instance
+            be configured.  CatSlapper does not currently do this for you. To learn more about configuring
+            the Tomcat Manager application for authentication see the 
+<?php include("Include/tomcat_website.inc.html") ?>.
+            </p>
+            		</div>
+		
+		<p>
+		When a configuration is first added, and CatSlapper has yet to retrieve any component
+		information from Tomcat Manager, you will see just the root element&mdash;the current instance of
+		Tomcat. CatSlapper ships set to perform automatic updates of component information at regular 
+		intervals. However, you can initiate the communication manually if you wish.
+		</p>
+		<div class="taskBox">			
+			<p class="taskDirection">
+			To manually initiate the communication between CatSlapper and Tomcat Manager:
+			</p>
+			<p>
+			Click the component reload button in the lower right of the "Components" outline view,
+			or click "Action" from the main menu and select "Update Component Info".
+			</p>
+					</div>
+        <p>
+         
+        </p>
+        <div class="taskBox">			
+            <p class="taskDirection">
+            To change the frequency with which CatSlapper requests component updates from 
+            Tomcat Manager:
+            </p>
+            <p>
+            Click "CatSlapper" from the main menu and select "Preferences".
+            </p>
+            <p>
+             Select the "Manger" pane and enter a new value in seconds in the text field.
+            </p>
+					</div>
+		
+		<div class="taskBox">			
+            <p class="taskDirection">
+            To turn off automatic requests for updates from Tomcat Manager:
+            </p>
+            <p>
+            Click "CatSlapper" from the main menu and select "Preferences".
+            </p>
+            <p>
+             Select the "Manger" pane and check "manually".
+            </p>
+					</div>
+		
+		<div style="height:5em">&nbsp;</div>
+
+	</div>
+<?php 
+$node="1";
+$sub_node="8";
+$sub_sub_node="2";
+include("Include/leftnav.inc.php"); 
+?>
+</body>
+
+</html>
+

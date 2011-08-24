@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE dictionary SYSTEM "file://localhost/System/Library/DTDs/sdef.dtd">
+<dictionary title="Dictionary">
+	<suite name="CatSlapper Suite" code="CtSl" description="Methods for accessing and managing CatSlapper&apos;s Tomcat database.">
+		<class name="application" code="capp" inherits="NSCoreSuite.NSApplication">
+			<cocoa class="NSApplication"/>
+			<property name="selected kitty" code="SeKt" type="kitty" access="r"/>
+			<responds-to name="toggle selection">
+				<cocoa method="handleToggleSelectionScriptCommand:"/>
+			</responds-to>
+			<responds-to name="restart selection">
+				<cocoa method="handleRestartSelectionScriptCommand:"/>
+			</responds-to>
+		</class>
+		<class name="kitty" code="Kity" plural="kittens" inherits="NSCoreSuite.AbstractObject">
+			<cocoa class="TCSKitty"/>
+			<property name="name" code="pnam" type="text" access="r"/>
+			<property name="is running" code="KtRn" type="boolean" access="r"/>
+			<property name="status text" code="KtSt" type="text" access="r"/>
+			<responds-to name="toggle"/>
+		</class>
+		<command name="toggle selection" code="TCSToggl" description="Toggles the selected kitty"/>
+		<command name="restart selection" code="TCSRestr" description="Restarts the selected kitty"/>
+	</suite>
+</dictionary>

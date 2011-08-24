@@ -1,0 +1,54 @@
+<html>
+
+<head>
+<?php 
+$topic_name="The \"Components\" View Display";
+include("Include/head.inc.php"); 
+?>
+</head>
+
+<body>
+<?php include("Include/topnav.inc.php") ?>	
+	<div class="clear">&nbsp;</div>
+	
+	<div id="content">
+		<p class="topicHeading">The "Components" View Display</p>
+		<div class="taskBox">
+			<p>
+			To display the "Components" view for a Tomcat instance, select the instance you
+			wish to manage from the dropdown menu in the controller window and click the "Components" tab
+			for that instance, or click "View" in the main menu and select "Components".
+			</p>
+		</div>
+		
+		<p>
+		The outline view displayed inside the "Components" tab represents a hierarchy of components
+		for a particular Tomcat instance. The root element is the Tomcat server itself. Its connectors 
+		(code that listens on a particular port for requests) and hosts (the default is "localhost")
+		are represented as its direct children.  Each deployed application is displayed as a child of
+		its parent host.  Actions that can be taken on a component are displayed in a popup menu
+		in the "Commands" column.
+		</p>
+		
+		<p align="center">
+		<img src="../images/components_display.jpg" width="526" height="270">
+		</p>
+		
+		<p>
+        Just the root element (this Tomcat) is present until CatSlapper has
+        communicated with this particular Tomcat Manager application instance at least once.
+        </p>		
+
+		<div style="height:5em">&nbsp;</div>
+
+	</div>
+<?php 
+$node="1";
+$sub_node="8";
+$sub_sub_node="1";
+include("Include/leftnav.inc.php"); 
+?>
+</body>
+
+</html>
+

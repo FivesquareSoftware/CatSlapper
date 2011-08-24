@@ -1,0 +1,59 @@
+{
+    IBClasses = (
+        {
+            ACTIONS = {displayManagerHelp = id; }; 
+            CLASS = FirstResponder; 
+            LANGUAGE = ObjC; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {
+            ACTIONS = {
+                browse = id; 
+                clearConsole = id; 
+                didEndEditOpts = id; 
+                displayManagerHelp = id; 
+                displayServerConfigErrors = id; 
+                editOpts = id; 
+                openAcknowledgements = id; 
+                openRunningTomcat = id; 
+                openTomcatDocs = id; 
+                showPreferences = id; 
+                toggleBindingsFromUseDefaults = id; 
+                toggleConsole = id; 
+                toggleController = id; 
+                toggleEnableStartupItem = id; 
+                toggleInfo = id; 
+            }; 
+            CLASS = TCSController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                catalinaBaseField = NSTextField; 
+                catalinaHomeField = NSTextField; 
+                catalinaOptsField = NSTextField; 
+                consoleScrollView = NSScrollView; 
+                consoleView = TCSConsoleView; 
+                entryField = NSTextField; 
+                entryWin = NSWindow; 
+                javaHomeField = NSTextField; 
+                kittyController = NSArrayController; 
+                mainWin = NSWindow; 
+                serverConfigErrorMessageButton = NSButton; 
+                slapper = TCSCatSlapper; 
+                tabView = NSTabView; 
+                toggleEnableStartupItemSwitch = NSButton; 
+                toggleUseDefaultsSwitch = NSButton; 
+                toolbar = NSToolbar; 
+                toolbarDelegate = TCSToolbarDelegate; 
+            }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {
+            ACTIONS = {cancelAuthorize = id; processAuthorize = id; }; 
+            CLASS = TCSTomcatManagerAuthController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {authPanel = NSPanel; }; 
+            SUPERCLASS = NSObject; 
+        }
+    ); 
+    IBVersion = 1; 
+}

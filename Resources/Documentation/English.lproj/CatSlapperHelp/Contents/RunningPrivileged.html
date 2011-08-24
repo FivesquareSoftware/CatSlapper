@@ -1,0 +1,72 @@
+<html>
+
+<head>
+<?php 
+$topic_name="Running Tomcat as the Privileged User";
+include("Include/head.inc.php"); 
+?>
+</head>
+
+<body>
+<?php include("Include/topnav.inc.php") ?>	
+	<div class="clear">&nbsp;</div>
+	
+	<div id="content">
+		<a name="CatSlapper_RunningPrivileged"></a>
+		<p class="topicHeading">Running Tomcat as the Privileged User</p>
+		<p>
+		CatSlapper allows you to decide whether to run each Tomcat instance
+		as either your own user or as the super user, root.
+		</p>
+		<p>
+		Which you choose depends on your requirements for Tomcat.  If you are
+		a Java developer running Tomcat on your workstation, you will most 
+		likely want to use the default and run Tomcat as your own user.
+		System adminstrators using CatSlapper on a production machine, might
+		want to run Tomcat as root.
+		</p>
+
+		<div class="taskBox">
+			<p class="taskDirection">
+			To enable or disable privileged operation for a Tomcat Instance:
+			</p>
+			<p>
+			Check or uncheck "Run Privileged" in a Tomcat's configuration.
+			</p>
+		</div>
+
+		<a name="CatSlapper_RepairingPermissions"></a>
+		<p class="taskHeading">
+		Repairing Permissions
+		</p>
+		<p>
+		When a Tomcat instance is run initially as root, it may create files 
+		and other resources (like sockets) that can not be subsequently
+		controlled by an ordinary user.  To help you out if this situation
+		occurs, CatSlapper can repair the permission on a Tomcat instance
+		that you have converted from a privileged Tomcat to a non-privileged
+		Tomcat.
+		</p>
+				
+		<div class="taskBox">
+			<p class="taskDirection">
+			To allow CatSlapper to repair permissions on a Tomcat:
+			</p>
+			<ol>
+			<li>Click "OK" when CatSlapper alerts you of a permissions problem
+			and asks to repair it.
+			</li>
+			<li>Enter an administrator's credentials at the prompt.</li>
+			</ol>
+		</div>
+		<div style="height:5em">&nbsp;</div>
+
+	</div>
+<?php 
+$node="1";
+include("Include/leftnav.inc.php"); 
+?>
+</body>
+
+</html>
+

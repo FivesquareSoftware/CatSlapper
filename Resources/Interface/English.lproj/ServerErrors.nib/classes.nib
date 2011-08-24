@@ -1,0 +1,13 @@
+{
+    IBClasses = (
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {CLASS = TCSServerConfigError; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            CLASS = TCSServerErrorDisplayController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {errorArrayController = NSArrayController; }; 
+            SUPERCLASS = NSWindowController; 
+        }
+    ); 
+    IBVersion = 1; 
+}

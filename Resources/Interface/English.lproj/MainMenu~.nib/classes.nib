@@ -1,0 +1,151 @@
+{
+    IBClasses = (
+        {CLASS = TCSCatHandler; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {
+                restartKitty = id; 
+                selectKitty = id; 
+                toggleKitty = id; 
+                updateComponentsForSelectedKitty = id; 
+            }; 
+            CLASS = TCSCatSlapper; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                appController = TCSController; 
+                componentView = NSOutlineView; 
+                consoleView = TCSConsoleView; 
+                kittyController = NSArrayController; 
+                kittySelector = NSPopUpButton; 
+                kittyStatusText = NSTextField; 
+                launchDaemonManager = TCSLaunchDaemonManager; 
+                managerProxy = TCSTomcatManagerProxy; 
+                startupTypeSelector = NSPopUpButton; 
+                wrangler = TCSCatWrangler; 
+            }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {CLASS = TCSCatWrangler; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {CLASS = TCSComponentNameCell; LANGUAGE = ObjC; SUPERCLASS = NSTextFieldCell; }, 
+        {
+            CLASS = TCSComponentOutlineViewColumn; 
+            LANGUAGE = ObjC; 
+            SUPERCLASS = NSTableColumn; 
+        }, 
+        {
+            ACTIONS = {closeInfoPanel = id; displayItemInfo = id; displayItemStatus = id; }; 
+            CLASS = TCSComponentViewDataSource; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                catSlapper = TCSCatSlapper; 
+                componentUpdateButton = NSButton; 
+                componentUpdateProgressIndicator = NSProgressIndicator; 
+                componentUpdateStatusField = NSTextField; 
+                componentView = NSOutlineView; 
+                infoPanel = NSPanel; 
+                kittyController = NSArrayController; 
+                managerProxy = TCSTomcatManagerProxy; 
+                selectedItemInfoField = NSTextField; 
+                selectedItemNameField = NSTextField; 
+            }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {CLASS = TCSConsoleView; LANGUAGE = ObjC; SUPERCLASS = NSTextView; }, 
+        {
+            ACTIONS = {
+                addRegistrationCode = id; 
+                askUserIfWeCanGetNewVersion = id; 
+                askUserIfWeCanInstallACLs = id; 
+                askUserIfWeCanRepairPermissions = id; 
+                askUserIfWeCanRunPrivileged = id; 
+                browse = id; 
+                cancelACLInstall = id; 
+                cancelGetNewVersion = id; 
+                cancelRepairPermissions = id; 
+                cancelRunPrivileged = id; 
+                clearConsole = id; 
+                didEndEditOpts = id; 
+                displayACLHelp = id; 
+                displayManagerHelp = id; 
+                displayRepairPermissionsHelp = id; 
+                displayRunningPrivilegedHelp = id; 
+                displayServerConfigErrors = id; 
+                editOpts = id; 
+                getNewVersion = id; 
+                goToOnlineStore = id; 
+                openAcknowledgements = id; 
+                openLicense = id; 
+                openRunningTomcat = id; 
+                openTomcatDocs = id; 
+                openTomcatWebsite = id; 
+                proceedToRepairPermissions = id; 
+                proceedToRunPrivileged = id; 
+                proceedWithACLInstall = id; 
+                registerCatSlapper = id; 
+                selectComponentsTab = id; 
+                selectEnvironmentTab = id; 
+                selectServerTab = id; 
+                sendCatSlapperFeedback = id; 
+                showPreferences = id; 
+                toggleConsole = id; 
+                toggleController = id; 
+                toggleInfo = id; 
+                toggleInstaller = id; 
+                visitFivesquare = id; 
+                warnUserThatEnablingACLsFailed = id; 
+                warnUserThatRepairingPermissionsFailed = id; 
+                warnUserThatSyncingLaunchDaemonsFailed = id; 
+                warnUserTheyCantUseSystemDaemons = id; 
+            }; 
+            CLASS = TCSController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                catalinaOptsField = NSTextField; 
+                consoleScrollView = NSScrollView; 
+                consoleView = TCSConsoleView; 
+                enableACLsPanel = NSWindow; 
+                entryField = NSTextField; 
+                entryWin = NSWindow; 
+                kittyController = NSArrayController; 
+                licensePanel = NSWindow; 
+                licenseTextView = NSTextView; 
+                mainWin = NSWindow; 
+                newVersionPanel = NSWindow; 
+                okToRepairPermissionsPanel = NSWindow; 
+                okToRunPrivilegedPanel = NSWindow; 
+                registrationPanel = NSWindow; 
+                slapper = TCSCatSlapper; 
+                tabView = NSTabView; 
+                toggleControllerMenuItem = NSMenuItem; 
+                toggleInstallerMenuItem = NSMenuItem; 
+                toggleUseDefaultsSwitch = NSButton; 
+                toolbar = NSToolbar; 
+                toolbarDelegate = TCSToolbarDelegate; 
+            }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {
+            CLASS = TCSKittyArrayController; 
+            LANGUAGE = ObjC; 
+            SUPERCLASS = NSArrayController; 
+        }, 
+        {CLASS = TCSLaunchDaemonManager; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {CLASS = TCSStartupItemManager; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            CLASS = TCSTomcatManagerProxy; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {componentView = NSOutlineView; dataSource = TCSComponentViewDataSource; }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {
+            CLASS = TCSToolbarDelegate; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                appController = TCSController; 
+                kittyController = NSArrayController; 
+                slapper = TCSCatSlapper; 
+            }; 
+            SUPERCLASS = NSObject; 
+        }
+    ); 
+    IBVersion = 1; 
+}

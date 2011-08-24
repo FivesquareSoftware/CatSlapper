@@ -1,0 +1,36 @@
+{
+    IBClasses = (
+        {
+            ACTIONS = {displayManagerHelp = id; newVersionCheck = id; }; 
+            CLASS = FirstResponder; 
+            LANGUAGE = ObjC; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {
+            ACTIONS = {
+                browse = id; 
+                didEndEditOpts = id; 
+                editOpts = id; 
+                loadUserShellEnvironment = id; 
+                selectFont = id; 
+            }; 
+            CLASS = TCSPrefController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                catalinaOptsField = NSTextField; 
+                defCon = NSObjectController; 
+                entryField = NSTextField; 
+                entryWin = NSWindow; 
+            }; 
+            SUPERCLASS = NSWindowController; 
+        }, 
+        {
+            ACTIONS = {showPane = id; }; 
+            CLASS = TCSPrefsToolbarDelegate; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {prefsWindow = NSWindow; tabView = NSTabView; }; 
+            SUPERCLASS = NSObject; 
+        }
+    ); 
+    IBVersion = 1; 
+}

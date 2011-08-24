@@ -1,0 +1,389 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 42;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8D5B49B0048680CD000E48DA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C167DFE841241C02AAC07 /* InfoPlist.strings */; };
+		8D5B49B4048680CD000E48DA /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */; };
+		A4D8A17C091AD20800ADD928 /* CatSlapper.m in Sources */ = {isa = PBXBuildFile; fileRef = A4D8A17B091AD20800ADD928 /* CatSlapper.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		089C1672FE841209C02AAC07 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		089C167EFE841241C02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		089C167FFE841241C02AAC07 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		32DBCF630370AF2F00C91783 /* CatSlapperWidgetPlugin_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CatSlapperWidgetPlugin_Prefix.pch; sourceTree = "<group>"; };
+		8D5B49B6048680CD000E48DA /* CatSlapper.widgetplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CatSlapper.widgetplugin; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D5B49B7048680CD000E48DA /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A4D8A17A091AD20800ADD928 /* CatSlapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CatSlapper.h; sourceTree = "<group>"; };
+		A4D8A17B091AD20800ADD928 /* CatSlapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CatSlapper.m; sourceTree = "<group>"; };
+		D2F7E65807B2D6F200F64583 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D5B49B3048680CD000E48DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D5B49B4048680CD000E48DA /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		089C166AFE841209C02AAC07 /* CatSlapperWidgetPlugin */ = {
+			isa = PBXGroup;
+			children = (
+				08FB77AFFE84173DC02AAC07 /* Classes */,
+				32C88E010371C26100C91783 /* Other Sources */,
+				089C167CFE841241C02AAC07 /* Resources */,
+				089C1671FE841209C02AAC07 /* Frameworks and Libraries */,
+				19C28FB8FE9D52D311CA2CBB /* Products */,
+			);
+			name = CatSlapperWidgetPlugin;
+			sourceTree = "<group>";
+		};
+		089C1671FE841209C02AAC07 /* Frameworks and Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7ACFEA557BF11CA2CBB /* Linked Frameworks */,
+				1058C7AEFEA557BF11CA2CBB /* Other Frameworks */,
+			);
+			name = "Frameworks and Libraries";
+			sourceTree = "<group>";
+		};
+		089C167CFE841241C02AAC07 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8D5B49B7048680CD000E48DA /* Info.plist */,
+				089C167DFE841241C02AAC07 /* InfoPlist.strings */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		08FB77AFFE84173DC02AAC07 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				A4D8A17A091AD20800ADD928 /* CatSlapper.h */,
+				A4D8A17B091AD20800ADD928 /* CatSlapper.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		1058C7ACFEA557BF11CA2CBB /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		1058C7AEFEA557BF11CA2CBB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				089C167FFE841241C02AAC07 /* AppKit.framework */,
+				D2F7E65807B2D6F200F64583 /* CoreData.framework */,
+				089C1672FE841209C02AAC07 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		19C28FB8FE9D52D311CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D5B49B6048680CD000E48DA /* CatSlapper.widgetplugin */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		32C88E010371C26100C91783 /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				32DBCF630370AF2F00C91783 /* CatSlapperWidgetPlugin_Prefix.pch */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8D5B49AC048680CD000E48DA /* CatSlapperWidgetPlugin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A4D8A163091AD16A00ADD928 /* Build configuration list for PBXNativeTarget "CatSlapperWidgetPlugin" */;
+			buildPhases = (
+				8D5B49AF048680CD000E48DA /* Resources */,
+				8D5B49B1048680CD000E48DA /* Sources */,
+				8D5B49B3048680CD000E48DA /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CatSlapperWidgetPlugin;
+			productInstallPath = "$(HOME)/Library/Bundles";
+			productName = CatSlapperWidgetPlugin;
+			productReference = 8D5B49B6048680CD000E48DA /* CatSlapper.widgetplugin */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		089C1669FE841209C02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = A4D8A167091AD16A00ADD928 /* Build configuration list for PBXProject "CatSlapperWidgetPlugin" */;
+			compatibilityVersion = "Xcode 2.4";
+			hasScannedForEncodings = 1;
+			mainGroup = 089C166AFE841209C02AAC07 /* CatSlapperWidgetPlugin */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8D5B49AC048680CD000E48DA /* CatSlapperWidgetPlugin */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D5B49AF048680CD000E48DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D5B49B0048680CD000E48DA /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D5B49B1048680CD000E48DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4D8A17C091AD20800ADD928 /* CatSlapper.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		089C167DFE841241C02AAC07 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				089C167EFE841241C02AAC07 /* English */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A4D8A164091AD16A00ADD928 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = CatSlapperWidgetPlugin_Prefix.pch;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Library/Bundles";
+				PREBINDING = NO;
+				PRODUCT_NAME = CatSlapper;
+				WRAPPER_EXTENSION = widgetplugin;
+				ZERO_LINK = YES;
+			};
+			name = Debug;
+		};
+		A4D8A165091AD16A00ADD928 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					ppc,
+					i386,
+				);
+				COPY_PHASE_STRIP = YES;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = CatSlapperWidgetPlugin_Prefix.pch;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Library/Bundles";
+				PREBINDING = NO;
+				PRODUCT_NAME = CatSlapper;
+				WRAPPER_EXTENSION = widgetplugin;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		A4D8A166091AD16A00ADD928 /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = CatSlapperWidgetPlugin_Prefix.pch;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Library/Bundles";
+				PREBINDING = NO;
+				PRODUCT_NAME = CatSlapper;
+				WRAPPER_EXTENSION = widgetplugin;
+			};
+			name = Default;
+		};
+		A4D8A168091AD16A00ADD928 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				WRAPPER_EXTENSION = widgetplugin;
+			};
+			name = Debug;
+		};
+		A4D8A169091AD16A00ADD928 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				WRAPPER_EXTENSION = widgetplugin;
+			};
+			name = Release;
+		};
+		A4D8A16A091AD16A00ADD928 /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				WRAPPER_EXTENSION = widgetplugin;
+			};
+			name = Default;
+		};
+		A4D8A1D0091AD3C300ADD928 /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = CatSlapperWidgetPlugin_Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Library/Bundles";
+				PREBINDING = NO;
+				PRODUCT_NAME = CatSlapper;
+				WRAPPER_EXTENSION = widgetplugin;
+				ZERO_LINK = YES;
+			};
+			name = Development;
+		};
+		A4D8A1D1091AD3C300ADD928 /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = CatSlapperWidgetPlugin_Prefix.pch;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Library/Bundles";
+				PREBINDING = NO;
+				PRODUCT_NAME = CatSlapper;
+				WRAPPER_EXTENSION = widgetplugin;
+				ZERO_LINK = NO;
+			};
+			name = Deployment;
+		};
+		A4D8A1D2091AD3C300ADD928 /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				WRAPPER_EXTENSION = widgetplugin;
+			};
+			name = Development;
+		};
+		A4D8A1D3091AD3C300ADD928 /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				WRAPPER_EXTENSION = widgetplugin;
+			};
+			name = Deployment;
+		};
+		A4E69C94099EA525009F930F /* Beta */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					ppc,
+					i386,
+				);
+				COPY_PHASE_STRIP = YES;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = CatSlapperWidgetPlugin_Prefix.pch;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Library/Bundles";
+				PREBINDING = NO;
+				PRODUCT_NAME = CatSlapper;
+				WRAPPER_EXTENSION = widgetplugin;
+				ZERO_LINK = NO;
+			};
+			name = Beta;
+		};
+		A4E69C95099EA525009F930F /* Beta */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				WRAPPER_EXTENSION = widgetplugin;
+			};
+			name = Beta;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A4D8A163091AD16A00ADD928 /* Build configuration list for PBXNativeTarget "CatSlapperWidgetPlugin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A4D8A164091AD16A00ADD928 /* Debug */,
+				A4D8A1D0091AD3C300ADD928 /* Development */,
+				A4D8A165091AD16A00ADD928 /* Release */,
+				A4D8A1D1091AD3C300ADD928 /* Deployment */,
+				A4E69C94099EA525009F930F /* Beta */,
+				A4D8A166091AD16A00ADD928 /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+		A4D8A167091AD16A00ADD928 /* Build configuration list for PBXProject "CatSlapperWidgetPlugin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A4D8A168091AD16A00ADD928 /* Debug */,
+				A4D8A1D2091AD3C300ADD928 /* Development */,
+				A4D8A169091AD16A00ADD928 /* Release */,
+				A4D8A1D3091AD3C300ADD928 /* Deployment */,
+				A4E69C95099EA525009F930F /* Beta */,
+				A4D8A16A091AD16A00ADD928 /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 089C1669FE841209C02AAC07 /* Project object */;
+}
